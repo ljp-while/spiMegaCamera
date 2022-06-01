@@ -1,0 +1,2239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Arducam_8h" kind="file" language="C++">
+    <compoundname>Arducam.h</compoundname>
+    <includes local="yes">Platform.h</includes>
+    <includedby refid="Arducam_8hpp" local="yes">/home/lou/arducamSpiDoc/libraryC++/Arducam.hpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Platform.h</label>
+      </node>
+      <node id="1">
+        <label>/home/lou/arducamSpiDoc/libraryC/Arducam.h</label>
+        <link refid="Arducam_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/lou/arducamSpiDoc/libraryC++/Arducam.hpp</label>
+        <link refid="Arducam_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>/home/lou/arducamSpiDoc/libraryC/Arducam.h</label>
+        <link refid="Arducam_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structCameraInfo" prot="public">CameraInfo</innerclass>
+    <innerclass refid="structArducamCamera" prot="public">ArducamCamera</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CamStatus</name>
+        <enumvalue id="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1ad78fefb3ad26c90b550454e8b8505a1e" prot="public">
+          <name>CAM_ERR_SUCCESS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation succeeded </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1a667dfc004f98c4948c41661580a45a28" prot="public">
+          <name>CAM_ERR_NO_CALLBACK</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No callback function is registered </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Camera status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="62" column="1" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="61" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="enum" id="Arducam_8h_1aad9c52a28f327c5d815f76befe687015" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CAM_IMAGE_MODE</name>
+        <enumvalue id="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a03362277ce6d8880e21b186451001f3a" prot="public">
+          <name>CAM_IMAGE_MODE_QQVGA</name>
+          <initializer>=0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>160x120 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a7491cfab5664b60bfafa41bf26e59a5f" prot="public">
+          <name>CAM_IMAGE_MODE_QVGA</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>320x240 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a43e66f40b7746cfa3626595dfafe1315" prot="public">
+          <name>CAM_IMAGE_MODE_VGA</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>640x480 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a3c4e48a704ef557d74fb651d4443f105" prot="public">
+          <name>CAM_IMAGE_MODE_SVGA</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>800x600 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a02b5580d07deb175b21529743e43497a" prot="public">
+          <name>CAM_IMAGE_MODE_HD</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1280x720 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a305826f88a7e28698f8dafc3e76f4ca8" prot="public">
+          <name>CAM_IMAGE_MODE_SXGAM</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1280x960 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a96ff299d23aa8d61a7991669ddffed63" prot="public">
+          <name>CAM_IMAGE_MODE_UXGA</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1600x1200 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a673bccb9bab53474c4cac256a18b7290" prot="public">
+          <name>CAM_IMAGE_MODE_FHD</name>
+          <initializer>= 0x07</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1920x1080 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a5aada59aa0f3d06c022c9674da6f31a0" prot="public">
+          <name>CAM_IMAGE_MODE_QXGA</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>2048x1536 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1aad9c52a28f327c5d815f76befe687015ad2563a3923a421d35d64192ad7e09b85" prot="public">
+          <name>CAM_IMAGE_MODE_WQXGA2</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>2592x1944 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a2fab80f52b895343f22dc423f9acb687" prot="public">
+          <name>CAM_IMAGE_MODE_9</name>
+          <initializer>= 0x0a</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Reserve </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Configure camera resolution. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="72" column="14" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="72" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="enum" id="Arducam_8h_1a039dba5eae31265427b4829d0db59231" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CAM_CONTRAST_LEVEL</name>
+        <enumvalue id="Arducam_8h_1a039dba5eae31265427b4829d0db59231a9b033b978300e447a7e121ceb56c8fe5" prot="public">
+          <name>CAM_CONTRAST_LEVEL_MINUS_3</name>
+          <initializer>=6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level -3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a039dba5eae31265427b4829d0db59231ad13726f2dfe529fe673b5902ffc9ac9a" prot="public">
+          <name>CAM_CONTRAST_LEVEL_MINUS_2</name>
+          <initializer>=4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level -2 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a039dba5eae31265427b4829d0db59231a3886a3200df9f8f761bb1fa2cc7b3a13" prot="public">
+          <name>CAM_CONTRAST_LEVEL_MINUS_1</name>
+          <initializer>=2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level -1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a039dba5eae31265427b4829d0db59231ab46683fb5e0b681da8d34fb95d39c07c" prot="public">
+          <name>CAM_CONTRAST_LEVEL_DEFAULT</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level Default </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a039dba5eae31265427b4829d0db59231aac51725ee26af7d2bc2581254b8d2aec" prot="public">
+          <name>CAM_CONTRAST_LEVEL_1</name>
+          <initializer>=1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level +1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a039dba5eae31265427b4829d0db59231a617219ff57ab254702c5485762ba9eee" prot="public">
+          <name>CAM_CONTRAST_LEVEL_2</name>
+          <initializer>=3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level +2 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a039dba5eae31265427b4829d0db59231a418a4649ee36450b711a34f38605303d" prot="public">
+          <name>CAM_CONTRAST_LEVEL_3</name>
+          <initializer>=5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level +3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Configure camera contrast level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="99" column="14" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="99" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="enum" id="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19aff" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CAM_EV_LEVEL</name>
+        <enumvalue id="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affacfb9c23415a7a622d739a294396e9aa5" prot="public">
+          <name>CAM_EV_LEVEL_MINUS_3</name>
+          <initializer>=6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level -3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affa2eb5f0d1f02c82b42b49291d3ed8a7d6" prot="public">
+          <name>CAM_EV_LEVEL_MINUS_2</name>
+          <initializer>=4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level -2 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affaf17f251b5ab3d1f6fea9971614135211" prot="public">
+          <name>CAM_EV_LEVEL_MINUS_1</name>
+          <initializer>=2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level -1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affa589e2e4864f518630aab919b36f3a8f6" prot="public">
+          <name>CAM_EV_LEVEL_DEFAULT</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level Default </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affa30bffff8f7c413498cdfca7c69d52d0d" prot="public">
+          <name>CAM_EV_LEVEL_1</name>
+          <initializer>=1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level +1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affa961fd26f93b132487d6c4730bb9816ca" prot="public">
+          <name>CAM_EV_LEVEL_2</name>
+          <initializer>=3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level +2 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affa637dd6bf4e0512ad42736de67de2d35f" prot="public">
+          <name>CAM_EV_LEVEL_3</name>
+          <initializer>=5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level +3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Configure camera EV level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="113" column="14" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="113" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="enum" id="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CAM_STAURATION_LEVEL</name>
+        <enumvalue id="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a2c0eec87b6c94d97ae43d6aace7ff0a4" prot="public">
+          <name>CAM_STAURATION_LEVEL_MINUS_3</name>
+          <initializer>=6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level -3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a918b8e9ec70c2d7d8a35da40987fca03" prot="public">
+          <name>CAM_STAURATION_LEVEL_MINUS_2</name>
+          <initializer>=4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level -2 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a4b9e2b9fd076bea05995eb52e7000717" prot="public">
+          <name>CAM_STAURATION_LEVEL_MINUS_1</name>
+          <initializer>=2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level -1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a4d288739e2c439be0b2b29e5c5a76fcf" prot="public">
+          <name>CAM_STAURATION_LEVEL_DEFAULT</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level Default </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a9e9df1bdbdadd8a702eaabc27f22ed29" prot="public">
+          <name>CAM_STAURATION_LEVEL_1</name>
+          <initializer>=1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level +1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011aa098dd653991912bd28f79ba0df104dc" prot="public">
+          <name>CAM_STAURATION_LEVEL_2</name>
+          <initializer>=3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level +2 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a76771f32c32c75a197367efac57e9768" prot="public">
+          <name>CAM_STAURATION_LEVEL_3</name>
+          <initializer>=5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level +3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Configure camera stauration level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="128" column="14" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="128" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="enum" id="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CAM_BRIGHTNESS_LEVEL</name>
+        <enumvalue id="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a0ced35cd858431788a18d11305942b2b" prot="public">
+          <name>CAM_BRIGHTNESS_LEVEL_MINUS_4</name>
+          <initializer>=8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level -4 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a24a5961269a5957ec20c130ae1d08273" prot="public">
+          <name>CAM_BRIGHTNESS_LEVEL_MINUS_3</name>
+          <initializer>=6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level -3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71aa38090974c30465438adab560a012a9c" prot="public">
+          <name>CAM_BRIGHTNESS_LEVEL_MINUS_2</name>
+          <initializer>=4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level -2 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a98c74b297dc8fb5d62ff570c3b494a99" prot="public">
+          <name>CAM_BRIGHTNESS_LEVEL_MINUS_1</name>
+          <initializer>=2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level -1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a0aa2a4f98eb36a1ff46031213aa69dbf" prot="public">
+          <name>CAM_BRIGHTNESS_LEVEL_DEFAULT</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level Default </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a1acca8ec51ab8406ec2861df57a3be2e" prot="public">
+          <name>CAM_BRIGHTNESS_LEVEL_1</name>
+          <initializer>=1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level +1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71ae37e08e5e5ffcda7d38d4bf9af87f1d9" prot="public">
+          <name>CAM_BRIGHTNESS_LEVEL_2</name>
+          <initializer>=3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level +2 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a25b6b6f8e0f0e29bf6466114509d3e2e" prot="public">
+          <name>CAM_BRIGHTNESS_LEVEL_3</name>
+          <initializer>=5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level +3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a166e43e536a1b7684bf5ddc47e45885c" prot="public">
+          <name>CAM_BRIGHTNESS_LEVEL_4</name>
+          <initializer>=7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Level +4 </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Configure camera brightness level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="142" column="14" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="142" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="enum" id="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CAM_SHARPNESS_LEVEL</name>
+        <enumvalue id="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a56078d8749e436aac4f2c2ef92597ab1" prot="public">
+          <name>CAM_SHARPNESS_LEVEL_AUTO</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sharpness Auto </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7aae9e8ea1af173d3418582874765cda8d" prot="public">
+          <name>CAM_SHARPNESS_LEVEL_1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sharpness Level 1 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7abe8405599dc09f7210f025b922a9134c" prot="public">
+          <name>CAM_SHARPNESS_LEVEL_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sharpness Level 2 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7aa6751398f8b32bb16bd83457e4f7e11a" prot="public">
+          <name>CAM_SHARPNESS_LEVEL_3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sharpness Level 3 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a770607f4263a3e91f9c7e95dd1462f81" prot="public">
+          <name>CAM_SHARPNESS_LEVEL_4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sharpness Level 4 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a1075693be8bcef3d585a897294599311" prot="public">
+          <name>CAM_SHARPNESS_LEVEL_5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sharpness Level 5 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a6414026ceddb166ede78020ccdc2c302" prot="public">
+          <name>CAM_SHARPNESS_LEVEL_6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sharpness Level 6 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a3997104f0c7c04db4bb400ce61da2404" prot="public">
+          <name>CAM_SHARPNESS_LEVEL_7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sharpness Level 7 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a579c04f9239f7758a46792a8184ea54a" prot="public">
+          <name>CAM_SHARPNESS_LEVEL_8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sharpness Level 8 </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Configure camera Sharpness level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="159" column="14" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="159" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="enum" id="Arducam_8h_1a79f9eea25f8ca9df7e0773ab408baed7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CAM_VIDEO_MODE</name>
+        <enumvalue id="Arducam_8h_1a79f9eea25f8ca9df7e0773ab408baed7a94446b4b6cb86a83016ed33022a8f09e" prot="public">
+          <name>CAM_VIDEO_MODE_0</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>320x240 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a79f9eea25f8ca9df7e0773ab408baed7a573f34bb7a6e52f8b74da47385f3c550" prot="public">
+          <name>CAM_VIDEO_MODE_1</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>640x480 </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Configure resolution in video streaming mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="176" column="14" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="176" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="enum" id="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CAM_IMAGE_PIX_FMT</name>
+        <enumvalue id="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338ad6a378f425b18247bc2adce64fa3af9a" prot="public">
+          <name>CAM_IMAGE_PIX_FMT_RGB565</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>RGB565 format </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338a8a7afaef9a95f8d85c7147481f395f36" prot="public">
+          <name>CAM_IMAGE_PIX_FMT_JPG</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>JPEG format </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338ab3e1c0bf1206a328aa95779d868024a2" prot="public">
+          <name>CAM_IMAGE_PIX_FMT_YUV</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>YUV format </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338ad29ea6bdf677352692fedfaeec0ee750" prot="public">
+          <name>CAM_IMAGE_PIX_FMT_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No defined format </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Configure image pixel format. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="186" column="15" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="186" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="enum" id="Arducam_8h_1a643d0ad26131376e247aab82485e0095" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CAM_WHITE_BALANCE</name>
+        <enumvalue id="Arducam_8h_1a643d0ad26131376e247aab82485e0095ab158e9dcb33756e8036f68502c627cb8" prot="public">
+          <name>CAM_WHITE_BALANCE_MODE_DEFAULT</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Auto </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a643d0ad26131376e247aab82485e0095a0066ad0339abd61e6a2878bca5bc4803" prot="public">
+          <name>CAM_WHITE_BALANCE_MODE_SUNNY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sunny </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a643d0ad26131376e247aab82485e0095a376561d470ebdb1fbfbc6464d556cbf3" prot="public">
+          <name>CAM_WHITE_BALANCE_MODE_OFFICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Office </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a643d0ad26131376e247aab82485e0095a774ec5e6f557a2ed4d2a1607917bf42a" prot="public">
+          <name>CAM_WHITE_BALANCE_MODE_CLOUDY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Cloudy </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a643d0ad26131376e247aab82485e0095a587bdf93698d9b3a3d8b7f97304b139e" prot="public">
+          <name>CAM_WHITE_BALANCE_MODE_HOME</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Home </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Configure white balance mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="198" column="14" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="198" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="enum" id="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CAM_COLOR_FX</name>
+        <enumvalue id="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375aa49d8377e2747f77e4bf613c850194ed" prot="public">
+          <name>CAM_COLOR_FX_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>no effect <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375a11048290f31c05cbdb76f4b34a16d351" prot="public">
+          <name>CAM_COLOR_FX_BLUEISH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>cool light <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375a69103867116a636e85511892cc61104f" prot="public">
+          <name>CAM_COLOR_FX_REDISH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>warm <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375abc189051b7ce7f3db2d97027064c22fd" prot="public">
+          <name>CAM_COLOR_FX_BW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Black/white <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375a62e9c1cde01042a1a1301d4b203a4295" prot="public">
+          <name>CAM_COLOR_FX_SEPIA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sepia <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375aa44e99955a02f7b181fa01b1f606cf05" prot="public">
+          <name>CAM_COLOR_FX_NEGATIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>positive/negative inversion <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375a7051f683fb111209375716eee162ba3b" prot="public">
+          <name>CAM_COLOR_FX_GRASS_GREEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Grass green </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375a965a6a727e8960b91144dc036e44506a" prot="public">
+          <name>CAM_COLOR_FX_OVER_EXPOSURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Over exposure </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375ac9ec846d3dab758529de003a1a9244d8" prot="public">
+          <name>CAM_COLOR_FX_SOLARIZE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Solarize <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Configure special effects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="211" column="15" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="211" bodyend="221"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="Arducam_8h_1a81b801c80862c07bcbe65126db52164c" prot="public" static="no">
+        <type>uint8_t(*</type>
+        <definition>typedef uint8_t(* BUFFER_CALLBACK) (uint8_t *buffer, uint8_t lenght)</definition>
+        <argsstring>)(uint8_t *buffer, uint8_t lenght)</argsstring>
+        <name>BUFFER_CALLBACK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback function prototype <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="225" column="9" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="Arducam_8h_1ada4a7f048d83ba0fe3a3c01f2588f6dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref></type>
+        <definition>ArducamCamera createArducamCamera</definition>
+        <argsstring>(int cs)</argsstring>
+        <name>createArducamCamera</name>
+        <param>
+          <type>int</type>
+          <declname>cs</declname>
+        </param>
+        <briefdescription>
+<para>Create a camera instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Chip select signal for SPI communication</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return a <ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="305" column="15" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="305" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1abb99665a6210474dbc5485efe40e569c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus begin</definition>
+        <argsstring>(ArducamCamera *camera)</argsstring>
+        <name>begin</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the configuration of the camera module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="315" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="315" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1ada9dc5817837f7cc41fdeece2aef7ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus takePicture</definition>
+        <argsstring>(ArducamCamera *camera, CAM_IMAGE_MODE mode, CAM_IMAGE_PIX_FMT pixel_format)</argsstring>
+        <name>takePicture</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015" kindref="member">CAM_IMAGE_MODE</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type><ref refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338" kindref="member">CAM_IMAGE_PIX_FMT</ref></type>
+          <declname>pixel_format</declname>
+        </param>
+        <briefdescription>
+<para>Start a snapshot with specified resolution and pixel format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resolution of the camera module </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pixel_format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output image pixel format,which supports JPEG, RGB, YUV</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status</para>
+</simplesect>
+<simplesect kind="note"><para>The mode parameter must be the resolution wh </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="328" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="328" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1ac6035b7faf84afc745ad232df945f33a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus takeMultiPictures</definition>
+        <argsstring>(ArducamCamera *camera, CAM_IMAGE_MODE mode, CAM_IMAGE_PIX_FMT pixel_format, uint8_t number)</argsstring>
+        <name>takeMultiPictures</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015" kindref="member">CAM_IMAGE_MODE</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type><ref refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338" kindref="member">CAM_IMAGE_PIX_FMT</ref></type>
+          <declname>pixel_format</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+<para>Start multi capture with specified number of image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resolution of the camera module </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pixel_format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output image pixel format,which supports JPEG, RGB, YUV </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of pictures taken</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status</para>
+</simplesect>
+<simplesect kind="note"><para>The mode parameter must be the resolution which the current camera supported </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="345" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="345" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1aee5a9ed5de4b2eafa1e2a3ccc10057a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus startPreview</definition>
+        <argsstring>(ArducamCamera *camera, CAM_VIDEO_MODE mode)</argsstring>
+        <name>startPreview</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="Arducam_8h_1a79f9eea25f8ca9df7e0773ab408baed7" kindref="member">CAM_VIDEO_MODE</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Start preview with specified resolution mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resolution of the camera module</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status</para>
+</simplesect>
+<simplesect kind="note"><para>Before calling this function, you need to register the callback function.The default image pixel format is JPEG </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="358" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="358" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1ab4c6ef63c66d7cf3ea0414628a91f4ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus stopPreview</definition>
+        <argsstring>(ArducamCamera *camera)</argsstring>
+        <name>stopPreview</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+<para>Stop preview. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="370" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="370" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1a6a18126bfaa8cb8201817f4882d1aa1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus setAutoExposure</definition>
+        <argsstring>(ArducamCamera *camera, uint8_t val)</argsstring>
+        <name>setAutoExposure</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set the exposure mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>1</computeroutput> Turn on automatic exposure <computeroutput>0</computeroutput> Turn off automatic exposure</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="383" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="383" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1ada4560a5518a67e3c621cdefb4387290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus setAbsoluteExposure</definition>
+        <argsstring>(ArducamCamera *camera, uint32_t val)</argsstring>
+        <name>setAbsoluteExposure</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set the exposure time Manually. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of exposure line</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status</para>
+</simplesect>
+<simplesect kind="note"><para>Before calling this function, you need to use the <ref refid="Arducam_8h_1a6a18126bfaa8cb8201817f4882d1aa1d" kindref="member">setAutoExposure()</ref> function to turn off the auto exposure function </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="397" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="397" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1a294c22d8841eea04dcd9a906cab9e6d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus setAutoISOSensitive</definition>
+        <argsstring>(ArducamCamera *camera, uint8_t val)</argsstring>
+        <name>setAutoISOSensitive</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set the gain mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>1</computeroutput> turn on automatic gain <computeroutput>0</computeroutput> turn off automatic gain</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="413" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="413" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1af6772ec6ede2f677d010110c5a816a83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus setISOSensitivity</definition>
+        <argsstring>(ArducamCamera *camera, int iso_sense)</argsstring>
+        <name>setISOSensitivity</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iso_sense</declname>
+        </param>
+        <briefdescription>
+<para>Set the exposure time Manually. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iso_sense</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of gain</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status</para>
+</simplesect>
+<simplesect kind="note"><para>Before calling this function, you need to use the <ref refid="Arducam_8h_1a294c22d8841eea04dcd9a906cab9e6d4" kindref="member">setAutoISOSensitive()</ref> function to turn off the auto gain function </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="427" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="427" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1ab11ad5a5fec036451e88f4f23dbc1f16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus setAutoWhiteBalance</definition>
+        <argsstring>(ArducamCamera *camera, uint8_t val)</argsstring>
+        <name>setAutoWhiteBalance</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set white balance mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>1</computeroutput> turn on automatic white balance <computeroutput>0</computeroutput> turn off automatic white balance</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="440" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="440" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1a8eb9dac524b4d55be9b908d9dd441d48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus setAutoWhiteBalanceMode</definition>
+        <argsstring>(ArducamCamera *camera, CAM_WHITE_BALANCE mode)</argsstring>
+        <name>setAutoWhiteBalanceMode</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="Arducam_8h_1a643d0ad26131376e247aab82485e0095" kindref="member">CAM_WHITE_BALANCE</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set the white balance mode Manually. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>White balance mode</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="453" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="453" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1a3881f35aaa967bd603fb37b77dabd2b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus setColorEffect</definition>
+        <argsstring>(ArducamCamera *camera, CAM_COLOR_FX effect)</argsstring>
+        <name>setColorEffect</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375" kindref="member">CAM_COLOR_FX</ref></type>
+          <declname>effect</declname>
+        </param>
+        <briefdescription>
+<para>Set special effects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Special effects mode</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="466" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="466" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1aa81771289c1c9cd0a920bf459b8dfe44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus setAutoFocus</definition>
+        <argsstring>(ArducamCamera *camera, uint8_t val)</argsstring>
+        <name>setAutoFocus</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set auto focus mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mode of autofocus</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status</para>
+</simplesect>
+<simplesect kind="note"><para>Only <computeroutput>5MP</computeroutput> cameras support auto focus control </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="480" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="480" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1a8124847ddb24c988de3b6fe8b7441fb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus setSaturation</definition>
+        <argsstring>(ArducamCamera *camera, CAM_STAURATION_LEVEL level)</argsstring>
+        <name>setSaturation</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011" kindref="member">CAM_STAURATION_LEVEL</ref></type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Set saturation level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Saturation level</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="492" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="492" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1a6c3e8ccf6bc773a48527ae7836d8ec74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus setEV</definition>
+        <argsstring>(ArducamCamera *camera, CAM_EV_LEVEL level)</argsstring>
+        <name>setEV</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19aff" kindref="member">CAM_EV_LEVEL</ref></type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Set EV level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>EV level</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="505" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="505" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1a9ef34f613cc36d6ae790b205afc2c9da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus setContrast</definition>
+        <argsstring>(ArducamCamera *camera, CAM_CONTRAST_LEVEL level)</argsstring>
+        <name>setContrast</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231" kindref="member">CAM_CONTRAST_LEVEL</ref></type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Set Contrast level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contrast level</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="518" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="518" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1abb620c825fbbc7588830f6b1d21a3728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus setBrightness</definition>
+        <argsstring>(ArducamCamera *camera, CAM_BRIGHTNESS_LEVEL level)</argsstring>
+        <name>setBrightness</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71" kindref="member">CAM_BRIGHTNESS_LEVEL</ref></type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Set Brightness level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Brightness level</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="531" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="531" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1a77e47dca0e36596a322c8d2e429f3c3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref></type>
+        <definition>CamStatus setSharpness</definition>
+        <argsstring>(ArducamCamera *camera, CAM_SHARPNESS_LEVEL level)</argsstring>
+        <name>setSharpness</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7" kindref="member">CAM_SHARPNESS_LEVEL</ref></type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Set Sharpness level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sharpness level</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return operation status</para>
+</simplesect>
+<simplesect kind="note"><para>Only <computeroutput>3MP</computeroutput> cameras support sharpness control </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="546" column="11" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="546" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1a0ae513a93d67a1d10ba242b25ce12c5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t readBuff</definition>
+        <argsstring>(ArducamCamera *camera, uint8_t *buff, uint8_t length)</argsstring>
+        <name>readBuff</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Read image data with specified length to buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer for storing camera data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the available data to be read</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the length actually read</para>
+</simplesect>
+<simplesect kind="note"><para>Transmission length should be less than <computeroutput>255</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="561" column="9" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="561" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1aaed9f105d4647e4e61e65672a601d4ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t readByte</definition>
+        <argsstring>(ArducamCamera *camera)</argsstring>
+        <name>readByte</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+<para>Read a byte from FIFO. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns Camera data</para>
+</simplesect>
+<simplesect kind="note"><para>Before calling this function, make sure that the data is available in the buffer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="573" column="9" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="573" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1a5055aa3e4cae6192acd2a790bed9a74b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void debugWriteRegister</definition>
+        <argsstring>(ArducamCamera *camera, uint8_t *buff)</argsstring>
+        <name>debugWriteRegister</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buff</declname>
+        </param>
+        <briefdescription>
+<para>Debug mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>There are four bytes of buff Byte 1 indicates the device address, Byte 2 indicates the high octet of the register, Byte 3 indicates the low octet of the register, and Byte 4 indicates the value written to the register </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="584" column="6" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="584" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1ac39259466f50b795261fd81082c9db4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void registerCallback</definition>
+        <argsstring>(ArducamCamera *camera, BUFFER_CALLBACK function, uint8_t blockSize)</argsstring>
+        <name>registerCallback</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="Arducam_8h_1a81b801c80862c07bcbe65126db52164c" kindref="member">BUFFER_CALLBACK</ref></type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>blockSize</declname>
+        </param>
+        <briefdescription>
+<para>Create callback function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blockSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the data transmitted by the callback function at one time</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Transmission length should be less than <computeroutput>255</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="597" column="6" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="597" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1a75a500a4f397c2a4024995404f0c4bb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lowPowerOn</definition>
+        <argsstring>(ArducamCamera *camera)</argsstring>
+        <name>lowPowerOn</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+<para>Turn on low power mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="607" column="6" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="607" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="Arducam_8h_1a41c4d1ac086eda32a95bd3d64568dd73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lowPowerOff</definition>
+        <argsstring>(ArducamCamera *camera)</argsstring>
+        <name>lowPowerOff</name>
+        <param>
+          <type><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+<para>Turn off low power mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref> instance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="616" column="6" declfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" declline="616" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para><ref refid="classArducam" kindref="compound">Arducam</ref> </para>
+</simplesect>
+<simplesect kind="date"><para>2021/12/6 </para>
+</simplesect>
+<simplesect kind="version"><para>V1.0 </para>
+</simplesect>
+<simplesect kind="copyright"><para><ref refid="classArducam" kindref="compound">Arducam</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2021<sp/>Arducam<sp/>Technology<sp/>co.,<sp/>Ltd.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">==============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__ARDUCAM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__ARDUCAM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Platform.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor">#define<sp/>TRUE<sp/><sp/>1<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FALSE<sp/>0<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structCameraInfo" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCameraInfo" kindref="compound">CameraInfo</ref>{</highlight></codeline>
+<codeline lineno="45" refid="structCameraInfo_1abbb53648ae151fa253a9e3d9ddacdb66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structCameraInfo_1abbb53648ae151fa253a9e3d9ddacdb66" kindref="member">cameraId</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="structCameraInfo_1a875016ea9b027f71c1591fc67c8ef2ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCameraInfo_1a875016ea9b027f71c1591fc67c8ef2ec" kindref="member">supportResolution</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="structCameraInfo_1a102f97a61395732beae18f32acb846fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCameraInfo_1a102f97a61395732beae18f32acb846fe" kindref="member">supportSpecialEffects</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="structCameraInfo_1a3c0c6782d143fae4f0db02c2e57eb43c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="structCameraInfo_1a3c0c6782d143fae4f0db02c2e57eb43c" kindref="member">exposureValueMax</ref>;<sp/></highlight></codeline>
+<codeline lineno="49" refid="structCameraInfo_1a8f43406fdfc2f0b5e1dc4e7754064426" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCameraInfo_1a8f43406fdfc2f0b5e1dc4e7754064426" kindref="member">exposureValueMin</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="structCameraInfo_1ae607a6b13202c4bf9fa2c58b59313fa5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCameraInfo_1ae607a6b13202c4bf9fa2c58b59313fa5" kindref="member">gainValueMax</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="structCameraInfo_1a638bfe2a43701e8030a106f660325181" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCameraInfo_1a638bfe2a43701e8030a106f660325181" kindref="member">gainValueMin</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="structCameraInfo_1a61a2a1ca9256dd8cd156e34b4d9a6a29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structCameraInfo_1a61a2a1ca9256dd8cd156e34b4d9a6a29" kindref="member">supportFocus</ref>;<sp/></highlight></codeline>
+<codeline lineno="53" refid="structCameraInfo_1ae7517e2dd74d57048c8265af6d2790f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structCameraInfo_1ae7517e2dd74d57048c8265af6d2790f4" kindref="member">supportSharpness</ref>;<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>deviceAddress;<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63" refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1ad78fefb3ad26c90b550454e8b8505a1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1ad78fefb3ad26c90b550454e8b8505a1e" kindref="member">CAM_ERR_SUCCESS</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1a667dfc004f98c4948c41661580a45a28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1a667dfc004f98c4948c41661580a45a28" kindref="member">CAM_ERR_NO_CALLBACK</ref>=<sp/>-1,<sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}<ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref>;<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="73" refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a03362277ce6d8880e21b186451001f3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a03362277ce6d8880e21b186451001f3a" kindref="member">CAM_IMAGE_MODE_QQVGA</ref><sp/>=0x00,<sp/></highlight></codeline>
+<codeline lineno="74" refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a7491cfab5664b60bfafa41bf26e59a5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a7491cfab5664b60bfafa41bf26e59a5f" kindref="member">CAM_IMAGE_MODE_QVGA</ref><sp/>=<sp/>0x01,<sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a43e66f40b7746cfa3626595dfafe1315" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a43e66f40b7746cfa3626595dfafe1315" kindref="member">CAM_IMAGE_MODE_VGA</ref><sp/>=<sp/>0x02,<sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a3c4e48a704ef557d74fb651d4443f105" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a3c4e48a704ef557d74fb651d4443f105" kindref="member">CAM_IMAGE_MODE_SVGA</ref><sp/>=<sp/>0x03,<sp/></highlight></codeline>
+<codeline lineno="77" refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a02b5580d07deb175b21529743e43497a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a02b5580d07deb175b21529743e43497a" kindref="member">CAM_IMAGE_MODE_HD</ref><sp/>=<sp/>0x04,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78" refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a305826f88a7e28698f8dafc3e76f4ca8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a305826f88a7e28698f8dafc3e76f4ca8" kindref="member">CAM_IMAGE_MODE_SXGAM</ref><sp/>=<sp/>0x05,<sp/></highlight></codeline>
+<codeline lineno="79" refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a96ff299d23aa8d61a7991669ddffed63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a96ff299d23aa8d61a7991669ddffed63" kindref="member">CAM_IMAGE_MODE_UXGA</ref><sp/>=<sp/>0x06,<sp/></highlight></codeline>
+<codeline lineno="80" refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a673bccb9bab53474c4cac256a18b7290" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a673bccb9bab53474c4cac256a18b7290" kindref="member">CAM_IMAGE_MODE_FHD</ref><sp/><sp/>=<sp/>0x07,<sp/></highlight></codeline>
+<codeline lineno="81" refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a5aada59aa0f3d06c022c9674da6f31a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a5aada59aa0f3d06c022c9674da6f31a0" kindref="member">CAM_IMAGE_MODE_QXGA</ref><sp/>=<sp/>0x08,<sp/></highlight></codeline>
+<codeline lineno="82" refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015ad2563a3923a421d35d64192ad7e09b85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015ad2563a3923a421d35d64192ad7e09b85" kindref="member">CAM_IMAGE_MODE_WQXGA2</ref><sp/>=<sp/>0x09,<sp/></highlight></codeline>
+<codeline lineno="83" refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a2fab80f52b895343f22dc423f9acb687" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015a2fab80f52b895343f22dc423f9acb687" kindref="member">CAM_IMAGE_MODE_9</ref><sp/>=<sp/>0x0a,<sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>CAM_IMAGE_MODE_10<sp/>=<sp/>0x0b,<sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>CAM_IMAGE_MODE_11<sp/>=<sp/>0x0c,<sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>CAM_IMAGE_MODE_12<sp/>=<sp/>0x0d,<sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>CAM_IMAGE_MODE_13<sp/>=<sp/>0x0e,<sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>CAM_IMAGE_MODE_14<sp/>=<sp/>0x0f,<sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>CAM_IMAGE_MODE_15<sp/>=<sp/>0x10,<sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}<ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015" kindref="member">CAM_IMAGE_MODE</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="100" refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231a9b033b978300e447a7e121ceb56c8fe5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231a9b033b978300e447a7e121ceb56c8fe5" kindref="member">CAM_CONTRAST_LEVEL_MINUS_3</ref>=6,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231ad13726f2dfe529fe673b5902ffc9ac9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231ad13726f2dfe529fe673b5902ffc9ac9a" kindref="member">CAM_CONTRAST_LEVEL_MINUS_2</ref>=4,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231a3886a3200df9f8f761bb1fa2cc7b3a13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231a3886a3200df9f8f761bb1fa2cc7b3a13" kindref="member">CAM_CONTRAST_LEVEL_MINUS_1</ref>=2,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231ab46683fb5e0b681da8d34fb95d39c07c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231ab46683fb5e0b681da8d34fb95d39c07c" kindref="member">CAM_CONTRAST_LEVEL_DEFAULT</ref>=0,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104" refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231aac51725ee26af7d2bc2581254b8d2aec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231aac51725ee26af7d2bc2581254b8d2aec" kindref="member">CAM_CONTRAST_LEVEL_1</ref>=1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105" refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231a617219ff57ab254702c5485762ba9eee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231a617219ff57ab254702c5485762ba9eee" kindref="member">CAM_CONTRAST_LEVEL_2</ref>=3,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106" refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231a418a4649ee36450b711a34f38605303d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231a418a4649ee36450b711a34f38605303d" kindref="member">CAM_CONTRAST_LEVEL_3</ref>=5,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}<ref refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231" kindref="member">CAM_CONTRAST_LEVEL</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19aff" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="114" refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affacfb9c23415a7a622d739a294396e9aa5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affacfb9c23415a7a622d739a294396e9aa5" kindref="member">CAM_EV_LEVEL_MINUS_3</ref>=6,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affa2eb5f0d1f02c82b42b49291d3ed8a7d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affa2eb5f0d1f02c82b42b49291d3ed8a7d6" kindref="member">CAM_EV_LEVEL_MINUS_2</ref>=4,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116" refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affaf17f251b5ab3d1f6fea9971614135211" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affaf17f251b5ab3d1f6fea9971614135211" kindref="member">CAM_EV_LEVEL_MINUS_1</ref>=2,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affa589e2e4864f518630aab919b36f3a8f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affa589e2e4864f518630aab919b36f3a8f6" kindref="member">CAM_EV_LEVEL_DEFAULT</ref>=0,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affa30bffff8f7c413498cdfca7c69d52d0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affa30bffff8f7c413498cdfca7c69d52d0d" kindref="member">CAM_EV_LEVEL_1</ref>=1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affa961fd26f93b132487d6c4730bb9816ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affa961fd26f93b132487d6c4730bb9816ca" kindref="member">CAM_EV_LEVEL_2</ref>=3,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120" refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affa637dd6bf4e0512ad42736de67de2d35f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19affa637dd6bf4e0512ad42736de67de2d35f" kindref="member">CAM_EV_LEVEL_3</ref>=5,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}<ref refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19aff" kindref="member">CAM_EV_LEVEL</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="129" refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a2c0eec87b6c94d97ae43d6aace7ff0a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a2c0eec87b6c94d97ae43d6aace7ff0a4" kindref="member">CAM_STAURATION_LEVEL_MINUS_3</ref>=6,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a918b8e9ec70c2d7d8a35da40987fca03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a918b8e9ec70c2d7d8a35da40987fca03" kindref="member">CAM_STAURATION_LEVEL_MINUS_2</ref>=4,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131" refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a4b9e2b9fd076bea05995eb52e7000717" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a4b9e2b9fd076bea05995eb52e7000717" kindref="member">CAM_STAURATION_LEVEL_MINUS_1</ref>=2,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132" refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a4d288739e2c439be0b2b29e5c5a76fcf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a4d288739e2c439be0b2b29e5c5a76fcf" kindref="member">CAM_STAURATION_LEVEL_DEFAULT</ref>=0,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133" refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a9e9df1bdbdadd8a702eaabc27f22ed29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a9e9df1bdbdadd8a702eaabc27f22ed29" kindref="member">CAM_STAURATION_LEVEL_1</ref>=1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134" refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011aa098dd653991912bd28f79ba0df104dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011aa098dd653991912bd28f79ba0df104dc" kindref="member">CAM_STAURATION_LEVEL_2</ref>=3,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135" refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a76771f32c32c75a197367efac57e9768" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011a76771f32c32c75a197367efac57e9768" kindref="member">CAM_STAURATION_LEVEL_3</ref>=5,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}<ref refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011" kindref="member">CAM_STAURATION_LEVEL</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="143" refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a0ced35cd858431788a18d11305942b2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a0ced35cd858431788a18d11305942b2b" kindref="member">CAM_BRIGHTNESS_LEVEL_MINUS_4</ref>=8,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144" refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a24a5961269a5957ec20c130ae1d08273" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a24a5961269a5957ec20c130ae1d08273" kindref="member">CAM_BRIGHTNESS_LEVEL_MINUS_3</ref>=6,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="145" refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71aa38090974c30465438adab560a012a9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71aa38090974c30465438adab560a012a9c" kindref="member">CAM_BRIGHTNESS_LEVEL_MINUS_2</ref>=4,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146" refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a98c74b297dc8fb5d62ff570c3b494a99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a98c74b297dc8fb5d62ff570c3b494a99" kindref="member">CAM_BRIGHTNESS_LEVEL_MINUS_1</ref>=2,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="147" refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a0aa2a4f98eb36a1ff46031213aa69dbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a0aa2a4f98eb36a1ff46031213aa69dbf" kindref="member">CAM_BRIGHTNESS_LEVEL_DEFAULT</ref>=0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148" refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a1acca8ec51ab8406ec2861df57a3be2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a1acca8ec51ab8406ec2861df57a3be2e" kindref="member">CAM_BRIGHTNESS_LEVEL_1</ref>=1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149" refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71ae37e08e5e5ffcda7d38d4bf9af87f1d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71ae37e08e5e5ffcda7d38d4bf9af87f1d9" kindref="member">CAM_BRIGHTNESS_LEVEL_2</ref>=3,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="150" refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a25b6b6f8e0f0e29bf6466114509d3e2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a25b6b6f8e0f0e29bf6466114509d3e2e" kindref="member">CAM_BRIGHTNESS_LEVEL_3</ref>=5,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151" refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a166e43e536a1b7684bf5ddc47e45885c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71a166e43e536a1b7684bf5ddc47e45885c" kindref="member">CAM_BRIGHTNESS_LEVEL_4</ref>=7,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}<ref refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71" kindref="member">CAM_BRIGHTNESS_LEVEL</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="160" refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a56078d8749e436aac4f2c2ef92597ab1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a56078d8749e436aac4f2c2ef92597ab1" kindref="member">CAM_SHARPNESS_LEVEL_AUTO</ref>=0,<sp/></highlight></codeline>
+<codeline lineno="161" refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7aae9e8ea1af173d3418582874765cda8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7aae9e8ea1af173d3418582874765cda8d" kindref="member">CAM_SHARPNESS_LEVEL_1</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="162" refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7abe8405599dc09f7210f025b922a9134c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7abe8405599dc09f7210f025b922a9134c" kindref="member">CAM_SHARPNESS_LEVEL_2</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="163" refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7aa6751398f8b32bb16bd83457e4f7e11a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7aa6751398f8b32bb16bd83457e4f7e11a" kindref="member">CAM_SHARPNESS_LEVEL_3</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="164" refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a770607f4263a3e91f9c7e95dd1462f81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a770607f4263a3e91f9c7e95dd1462f81" kindref="member">CAM_SHARPNESS_LEVEL_4</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="165" refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a1075693be8bcef3d585a897294599311" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a1075693be8bcef3d585a897294599311" kindref="member">CAM_SHARPNESS_LEVEL_5</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="166" refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a6414026ceddb166ede78020ccdc2c302" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a6414026ceddb166ede78020ccdc2c302" kindref="member">CAM_SHARPNESS_LEVEL_6</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="167" refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a3997104f0c7c04db4bb400ce61da2404" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a3997104f0c7c04db4bb400ce61da2404" kindref="member">CAM_SHARPNESS_LEVEL_7</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="168" refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a579c04f9239f7758a46792a8184ea54a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7a579c04f9239f7758a46792a8184ea54a" kindref="member">CAM_SHARPNESS_LEVEL_8</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}<ref refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7" kindref="member">CAM_SHARPNESS_LEVEL</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="Arducam_8h_1a79f9eea25f8ca9df7e0773ab408baed7" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="177" refid="Arducam_8h_1a79f9eea25f8ca9df7e0773ab408baed7a94446b4b6cb86a83016ed33022a8f09e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a79f9eea25f8ca9df7e0773ab408baed7a94446b4b6cb86a83016ed33022a8f09e" kindref="member">CAM_VIDEO_MODE_0</ref><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="178" refid="Arducam_8h_1a79f9eea25f8ca9df7e0773ab408baed7a573f34bb7a6e52f8b74da47385f3c550" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a79f9eea25f8ca9df7e0773ab408baed7a573f34bb7a6e52f8b74da47385f3c550" kindref="member">CAM_VIDEO_MODE_1</ref><sp/>=<sp/>2,<sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}<ref refid="Arducam_8h_1a79f9eea25f8ca9df7e0773ab408baed7" kindref="member">CAM_VIDEO_MODE</ref>;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="187" refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338ad6a378f425b18247bc2adce64fa3af9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338ad6a378f425b18247bc2adce64fa3af9a" kindref="member">CAM_IMAGE_PIX_FMT_RGB565</ref><sp/>=<sp/>0x02,<sp/></highlight></codeline>
+<codeline lineno="188" refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338a8a7afaef9a95f8d85c7147481f395f36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338a8a7afaef9a95f8d85c7147481f395f36" kindref="member">CAM_IMAGE_PIX_FMT_JPG</ref><sp/><sp/><sp/><sp/>=<sp/>0x01,<sp/></highlight></codeline>
+<codeline lineno="189" refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338ab3e1c0bf1206a328aa95779d868024a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338ab3e1c0bf1206a328aa95779d868024a2" kindref="member">CAM_IMAGE_PIX_FMT_YUV</ref><sp/><sp/><sp/><sp/>=<sp/>0x03,<sp/></highlight></codeline>
+<codeline lineno="190" refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338ad29ea6bdf677352692fedfaeec0ee750" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338ad29ea6bdf677352692fedfaeec0ee750" kindref="member">CAM_IMAGE_PIX_FMT_NONE</ref>,<sp/></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}<ref refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338" kindref="member">CAM_IMAGE_PIX_FMT</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="Arducam_8h_1a643d0ad26131376e247aab82485e0095" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="199" refid="Arducam_8h_1a643d0ad26131376e247aab82485e0095ab158e9dcb33756e8036f68502c627cb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a643d0ad26131376e247aab82485e0095ab158e9dcb33756e8036f68502c627cb8" kindref="member">CAM_WHITE_BALANCE_MODE_DEFAULT</ref>=0,</highlight></codeline>
+<codeline lineno="200" refid="Arducam_8h_1a643d0ad26131376e247aab82485e0095a0066ad0339abd61e6a2878bca5bc4803" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a643d0ad26131376e247aab82485e0095a0066ad0339abd61e6a2878bca5bc4803" kindref="member">CAM_WHITE_BALANCE_MODE_SUNNY</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="201" refid="Arducam_8h_1a643d0ad26131376e247aab82485e0095a376561d470ebdb1fbfbc6464d556cbf3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a643d0ad26131376e247aab82485e0095a376561d470ebdb1fbfbc6464d556cbf3" kindref="member">CAM_WHITE_BALANCE_MODE_OFFICE</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="202" refid="Arducam_8h_1a643d0ad26131376e247aab82485e0095a774ec5e6f557a2ed4d2a1607917bf42a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a643d0ad26131376e247aab82485e0095a774ec5e6f557a2ed4d2a1607917bf42a" kindref="member">CAM_WHITE_BALANCE_MODE_CLOUDY</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="203" refid="Arducam_8h_1a643d0ad26131376e247aab82485e0095a587bdf93698d9b3a3d8b7f97304b139e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a643d0ad26131376e247aab82485e0095a587bdf93698d9b3a3d8b7f97304b139e" kindref="member">CAM_WHITE_BALANCE_MODE_HOME</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="204"><highlight class="normal">}<ref refid="Arducam_8h_1a643d0ad26131376e247aab82485e0095" kindref="member">CAM_WHITE_BALANCE</ref>;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="212" refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375aa49d8377e2747f77e4bf613c850194ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375aa49d8377e2747f77e4bf613c850194ed" kindref="member">CAM_COLOR_FX_NONE</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="213" refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375a11048290f31c05cbdb76f4b34a16d351" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375a11048290f31c05cbdb76f4b34a16d351" kindref="member">CAM_COLOR_FX_BLUEISH</ref>,<sp/></highlight></codeline>
+<codeline lineno="214" refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375a69103867116a636e85511892cc61104f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375a69103867116a636e85511892cc61104f" kindref="member">CAM_COLOR_FX_REDISH</ref>,<sp/></highlight></codeline>
+<codeline lineno="215" refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375abc189051b7ce7f3db2d97027064c22fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375abc189051b7ce7f3db2d97027064c22fd" kindref="member">CAM_COLOR_FX_BW</ref>,<sp/></highlight></codeline>
+<codeline lineno="216" refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375a62e9c1cde01042a1a1301d4b203a4295" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375a62e9c1cde01042a1a1301d4b203a4295" kindref="member">CAM_COLOR_FX_SEPIA</ref>,<sp/></highlight></codeline>
+<codeline lineno="217" refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375aa44e99955a02f7b181fa01b1f606cf05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375aa44e99955a02f7b181fa01b1f606cf05" kindref="member">CAM_COLOR_FX_NEGATIVE</ref>,<sp/></highlight></codeline>
+<codeline lineno="218" refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375a7051f683fb111209375716eee162ba3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375a7051f683fb111209375716eee162ba3b" kindref="member">CAM_COLOR_FX_GRASS_GREEN</ref>,<sp/></highlight></codeline>
+<codeline lineno="219" refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375a965a6a727e8960b91144dc036e44506a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375a965a6a727e8960b91144dc036e44506a" kindref="member">CAM_COLOR_FX_OVER_EXPOSURE</ref>,<sp/></highlight></codeline>
+<codeline lineno="220" refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375ac9ec846d3dab758529de003a1a9244d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375ac9ec846d3dab758529de003a1a9244d8" kindref="member">CAM_COLOR_FX_SOLARIZE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}<ref refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375" kindref="member">CAM_COLOR_FX</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="Arducam_8h_1a81b801c80862c07bcbe65126db52164c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>(*<ref refid="Arducam_8h_1a81b801c80862c07bcbe65126db52164c" kindref="member">BUFFER_CALLBACK</ref>)(uint8_t*buffer,<sp/>uint8_t<sp/>lenght);<sp/></highlight></codeline>
+<codeline lineno="234" refid="structArducamCamera" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="235" refid="structArducamCamera_1a7714744f53c9703a439bf8f4cc9d0662" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structArducamCamera_1a7714744f53c9703a439bf8f4cc9d0662" kindref="member">csPin</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="236" refid="structArducamCamera_1ae26950accff916b57616a84d53ebdd7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structArducamCamera_1ae26950accff916b57616a84d53ebdd7b" kindref="member">totalLength</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="237" refid="structArducamCamera_1a76dfe5e55658033342b10788d50fbf34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structArducamCamera_1a76dfe5e55658033342b10788d50fbf34" kindref="member">receivedLength</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="238" refid="structArducamCamera_1a1fd4f387d42fafa53f751f2d3a50e82c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structArducamCamera_1a1fd4f387d42fafa53f751f2d3a50e82c" kindref="member">blockSize</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="239" refid="structArducamCamera_1a566bba6b4f9ada59bb3fe9b82df37409" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structArducamCamera_1a566bba6b4f9ada59bb3fe9b82df37409" kindref="member">cameraId</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="240" refid="structArducamCamera_1a21e0e1636b773f044893c980f39262ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structArducamCamera_1a21e0e1636b773f044893c980f39262ab" kindref="member">cameraDataFormat</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="241" refid="structArducamCamera_1a3dd40388c20343fb13f2ae1b01da94e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structArducamCamera_1a3dd40388c20343fb13f2ae1b01da94e8" kindref="member">burstFirstFlag</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="242" refid="structArducamCamera_1a931008407bcc8aaff983cca3df6eda07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structArducamCamera_1a931008407bcc8aaff983cca3df6eda07" kindref="member">previewMode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="243" refid="structArducamCamera_1a00deab096c8a215134965b30cc035946" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structArducamCamera_1a00deab096c8a215134965b30cc035946" kindref="member">currentPixelFormat</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="244" refid="structArducamCamera_1ae16629c42644ebe55b8609a1b9f00bcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structArducamCamera_1ae16629c42644ebe55b8609a1b9f00bcb" kindref="member">currentPictureMode</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="245" refid="structArducamCamera_1aa89ea2811484145ee10ba2031df8a20d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCameraInfo" kindref="compound">CameraInfo</ref><sp/>myCameraInfo;<sp/></highlight></codeline>
+<codeline lineno="246" refid="structArducamCamera_1a465a44b60f126c47c1a1e26f94f97475" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">CameraOperations*<sp/><ref refid="structArducamCamera_1a465a44b60f126c47c1a1e26f94f97475" kindref="member">arducamCameraOp</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="247" refid="structArducamCamera_1acffc4cff7d9305f4dc20505b0cf74d30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a81b801c80862c07bcbe65126db52164c" kindref="member">BUFFER_CALLBACK</ref><sp/><ref refid="structArducamCamera_1acffc4cff7d9305f4dc20505b0cf74d30" kindref="member">callBackFunction</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="248"><highlight class="normal">}<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="keyword">struct<sp/></highlight><highlight class="normal">CameraOperations{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1abb99665a6210474dbc5485efe40e569c" kindref="member">begin</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1ada9dc5817837f7cc41fdeece2aef7ede" kindref="member">takePicture</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,<ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015" kindref="member">CAM_IMAGE_MODE</ref>,<ref refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338" kindref="member">CAM_IMAGE_PIX_FMT</ref>);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1ac6035b7faf84afc745ad232df945f33a" kindref="member">takeMultiPictures</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,<ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015" kindref="member">CAM_IMAGE_MODE</ref>,<ref refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338" kindref="member">CAM_IMAGE_PIX_FMT</ref>,uint8_t);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1aee5a9ed5de4b2eafa1e2a3ccc10057a6" kindref="member">startPreview</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,<ref refid="Arducam_8h_1a79f9eea25f8ca9df7e0773ab408baed7" kindref="member">CAM_VIDEO_MODE</ref>);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1ab4c6ef63c66d7cf3ea0414628a91f4ba" kindref="member">stopPreview</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1a6a18126bfaa8cb8201817f4882d1aa1d" kindref="member">setAutoExposure</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,uint8_t);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1ada4560a5518a67e3c621cdefb4387290" kindref="member">setAbsoluteExposure</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,uint32_t);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1a294c22d8841eea04dcd9a906cab9e6d4" kindref="member">setAutoISOSensitive</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,uint8_t);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1af6772ec6ede2f677d010110c5a816a83" kindref="member">setISOSensitivity</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,int);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1ab11ad5a5fec036451e88f4f23dbc1f16" kindref="member">setAutoWhiteBalance</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,uint8_t);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1a8eb9dac524b4d55be9b908d9dd441d48" kindref="member">setAutoWhiteBalanceMode</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,<ref refid="Arducam_8h_1a643d0ad26131376e247aab82485e0095" kindref="member">CAM_WHITE_BALANCE</ref>);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1a3881f35aaa967bd603fb37b77dabd2b2" kindref="member">setColorEffect</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,<ref refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375" kindref="member">CAM_COLOR_FX</ref>);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1aa81771289c1c9cd0a920bf459b8dfe44" kindref="member">setAutoFocus</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,uint8_t);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1a8124847ddb24c988de3b6fe8b7441fb3" kindref="member">setSaturation</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,<ref refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011" kindref="member">CAM_STAURATION_LEVEL</ref>);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1a6c3e8ccf6bc773a48527ae7836d8ec74" kindref="member">setEV</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,<ref refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19aff" kindref="member">CAM_EV_LEVEL</ref>);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1a9ef34f613cc36d6ae790b205afc2c9da" kindref="member">setContrast</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,<ref refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231" kindref="member">CAM_CONTRAST_LEVEL</ref>);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1abb620c825fbbc7588830f6b1d21a3728" kindref="member">setBrightness</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,<ref refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71" kindref="member">CAM_BRIGHTNESS_LEVEL</ref>);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/>(*<ref refid="Arducam_8h_1a77e47dca0e36596a322c8d2e429f3c3e" kindref="member">setSharpness</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,<ref refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7" kindref="member">CAM_SHARPNESS_LEVEL</ref>);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>(*imageAvailable)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*csHigh)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*csLow)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>(*<ref refid="Arducam_8h_1a0ae513a93d67a1d10ba242b25ce12c5e" kindref="member">readBuff</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,uint8_t*,uint8_t);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>(*<ref refid="Arducam_8h_1aaed9f105d4647e4e61e65672a601d4ae" kindref="member">readByte</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="Arducam_8h_1a5055aa3e4cae6192acd2a790bed9a74b" kindref="member">debugWriteRegister</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,uint8_t*);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*writeReg)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,uint8_t,uint8_t);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>(*readReg)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,uint8_t);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>(*busRead)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,int);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>(*busWrite)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,int,int);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*flushFifo)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*startCapture)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*clearFifoFlag)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>(*readFifoLength)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>(*getBit)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,uint8_t,uint8_t);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*setFifoBurst)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*setCapture)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*waitI2cIdle)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="Arducam_8h_1a75a500a4f397c2a4024995404f0c4bb7" kindref="member">lowPowerOn</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="Arducam_8h_1a41c4d1ac086eda32a95bd3d64568dd73" kindref="member">lowPowerOff</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="Arducam_8h_1ac39259466f50b795261fd81082c9db4c" kindref="member">registerCallback</ref>)(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*,<ref refid="Arducam_8h_1a81b801c80862c07bcbe65126db52164c" kindref="member">BUFFER_CALLBACK</ref>,uint8_t);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="304"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref><sp/><ref refid="Arducam_8h_1ada4a7f048d83ba0fe3a3c01f2588f6dd" kindref="member">createArducamCamera</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cs);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="313"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1abb99665a6210474dbc5485efe40e569c" kindref="member">begin</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*<sp/>camera);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="328"><highlight class="comment"></highlight><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1ada9dc5817837f7cc41fdeece2aef7ede" kindref="member">takePicture</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera,<sp/><ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015" kindref="member">CAM_IMAGE_MODE</ref><sp/>mode,<sp/><ref refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338" kindref="member">CAM_IMAGE_PIX_FMT</ref><sp/>pixel_format);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="344"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1ac6035b7faf84afc745ad232df945f33a" kindref="member">takeMultiPictures</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera,<sp/><ref refid="Arducam_8h_1aad9c52a28f327c5d815f76befe687015" kindref="member">CAM_IMAGE_MODE</ref><sp/>mode,<sp/><ref refid="Arducam_8h_1ae9748ceecc6f11421cb46fc489606338" kindref="member">CAM_IMAGE_PIX_FMT</ref><sp/>pixel_format,<sp/>uint8_t<sp/>number);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="357"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1aee5a9ed5de4b2eafa1e2a3ccc10057a6" kindref="member">startPreview</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera,<sp/><ref refid="Arducam_8h_1a79f9eea25f8ca9df7e0773ab408baed7" kindref="member">CAM_VIDEO_MODE</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="369"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1ab4c6ef63c66d7cf3ea0414628a91f4ba" kindref="member">stopPreview</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="382"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1a6a18126bfaa8cb8201817f4882d1aa1d" kindref="member">setAutoExposure</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera,<sp/>uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="396"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1ada4560a5518a67e3c621cdefb4387290" kindref="member">setAbsoluteExposure</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera,<sp/>uint32_t<sp/>val);</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="412"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1a294c22d8841eea04dcd9a906cab9e6d4" kindref="member">setAutoISOSensitive</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera,<sp/>uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="426"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1af6772ec6ede2f677d010110c5a816a83" kindref="member">setISOSensitivity</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iso_sense);</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="439"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1ab11ad5a5fec036451e88f4f23dbc1f16" kindref="member">setAutoWhiteBalance</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera,<sp/>uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="452"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1a8eb9dac524b4d55be9b908d9dd441d48" kindref="member">setAutoWhiteBalanceMode</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*<sp/>camera,<sp/><ref refid="Arducam_8h_1a643d0ad26131376e247aab82485e0095" kindref="member">CAM_WHITE_BALANCE</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="465"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1a3881f35aaa967bd603fb37b77dabd2b2" kindref="member">setColorEffect</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*<sp/>camera,<sp/><ref refid="Arducam_8h_1a1396f1daef6526339ee8abe10a55c375" kindref="member">CAM_COLOR_FX</ref><sp/>effect);</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="479"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1aa81771289c1c9cd0a920bf459b8dfe44" kindref="member">setAutoFocus</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera,<sp/>uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="491"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1a8124847ddb24c988de3b6fe8b7441fb3" kindref="member">setSaturation</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera,<sp/><ref refid="Arducam_8h_1af8d3f3a4b053155fc03d27c1dd23c011" kindref="member">CAM_STAURATION_LEVEL</ref><sp/>level);</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal"></highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="504"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1a6c3e8ccf6bc773a48527ae7836d8ec74" kindref="member">setEV</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera,<sp/><ref refid="Arducam_8h_1ab97c4e8f129e7b064def02a3e9e19aff" kindref="member">CAM_EV_LEVEL</ref><sp/>level);</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="507"><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="517"><highlight class="comment"></highlight><highlight class="comment">//********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1a9ef34f613cc36d6ae790b205afc2c9da" kindref="member">setContrast</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera,<sp/><ref refid="Arducam_8h_1a039dba5eae31265427b4829d0db59231" kindref="member">CAM_CONTRAST_LEVEL</ref><sp/>level);</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="530"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1abb620c825fbbc7588830f6b1d21a3728" kindref="member">setBrightness</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera,<sp/><ref refid="Arducam_8h_1adf950e5ae505c62fabb157a5385c2c71" kindref="member">CAM_BRIGHTNESS_LEVEL</ref><sp/>level);</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="545"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><ref refid="Arducam_8h_1a859449669e9de69e33ddd851c3eac6c1" kindref="member">CamStatus</ref><sp/><ref refid="Arducam_8h_1a77e47dca0e36596a322c8d2e429f3c3e" kindref="member">setSharpness</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera,<sp/><ref refid="Arducam_8h_1afe52c72b2eda519bcd2b9db8df0d13f7" kindref="member">CAM_SHARPNESS_LEVEL</ref><sp/>level);</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"></highlight></codeline>
+<codeline lineno="548"><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="560"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="561"><highlight class="normal">uint8_t<sp/><ref refid="Arducam_8h_1a0ae513a93d67a1d10ba242b25ce12c5e" kindref="member">readBuff</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera,<sp/>uint8_t*<sp/>buff,<sp/>uint8_t<sp/>length);</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"></highlight></codeline>
+<codeline lineno="563"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="572"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="573"><highlight class="normal">uint8_t<sp/><ref refid="Arducam_8h_1aaed9f105d4647e4e61e65672a601d4ae" kindref="member">readByte</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera);</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"></highlight></codeline>
+<codeline lineno="575"><highlight class="normal"></highlight></codeline>
+<codeline lineno="576"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="583"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="Arducam_8h_1a5055aa3e4cae6192acd2a790bed9a74b" kindref="member">debugWriteRegister</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*<sp/>camera,<sp/>uint8_t*<sp/>buff);</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"></highlight></codeline>
+<codeline lineno="586"><highlight class="normal"></highlight></codeline>
+<codeline lineno="587"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="596"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="597"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="Arducam_8h_1ac39259466f50b795261fd81082c9db4c" kindref="member">registerCallback</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*<sp/>camera,<sp/><ref refid="Arducam_8h_1a81b801c80862c07bcbe65126db52164c" kindref="member">BUFFER_CALLBACK</ref><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">,<sp/>uint8_t<sp/>blockSize);</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"></highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="600"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="606"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="607"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="Arducam_8h_1a75a500a4f397c2a4024995404f0c4bb7" kindref="member">lowPowerOn</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera);</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"></highlight></codeline>
+<codeline lineno="609"><highlight class="normal"></highlight><highlight class="comment">//**********************************************</highlight></codeline>
+<codeline lineno="615"><highlight class="comment"></highlight><highlight class="comment">//**********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="616"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="Arducam_8h_1a41c4d1ac086eda32a95bd3d64568dd73" kindref="member">lowPowerOff</ref>(<ref refid="structArducamCamera" kindref="compound">ArducamCamera</ref>*camera);</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"></highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight></codeline>
+<codeline lineno="619"><highlight class="normal"></highlight></codeline>
+<codeline lineno="620"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="621"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="623"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*__ARDUCAM_H*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="624"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h"/>
+  </compounddef>
+</doxygen>

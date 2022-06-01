@@ -1,0 +1,138 @@
+\hypertarget{structArducamCamera}{}\doxysection{Arducam\+Camera Struct Reference}
+\label{structArducamCamera}\index{ArducamCamera@{ArducamCamera}}
+
+
+Camera drive interface and information.  
+
+
+
+
+{\ttfamily \#include $<$Arducam.\+h$>$}
+
+
+
+Collaboration diagram for Arducam\+Camera\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{structArducamCamera__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structArducamCamera_a7714744f53c9703a439bf8f4cc9d0662}{cs\+Pin}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structArducamCamera_ae26950accff916b57616a84d53ebdd7b}{total\+Length}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structArducamCamera_a76dfe5e55658033342b10788d50fbf34}{received\+Length}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structArducamCamera_a1fd4f387d42fafa53f751f2d3a50e82c}{block\+Size}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structArducamCamera_a566bba6b4f9ada59bb3fe9b82df37409}{camera\+Id}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structArducamCamera_a21e0e1636b773f044893c980f39262ab}{camera\+Data\+Format}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structArducamCamera_a3dd40388c20343fb13f2ae1b01da94e8}{burst\+First\+Flag}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structArducamCamera_a931008407bcc8aaff983cca3df6eda07}{preview\+Mode}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structArducamCamera_a00deab096c8a215134965b30cc035946}{current\+Pixel\+Format}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structArducamCamera_ae16629c42644ebe55b8609a1b9f00bcb}{current\+Picture\+Mode}}
+\item 
+struct \mbox{\hyperlink{structCameraInfo}{Camera\+Info}} \mbox{\hyperlink{structArducamCamera_aa89ea2811484145ee10ba2031df8a20d}{my\+Camera\+Info}}
+\item 
+const struct Camera\+Operations $\ast$ \mbox{\hyperlink{structArducamCamera_a465a44b60f126c47c1a1e26f94f97475}{arducam\+Camera\+Op}}
+\item 
+\mbox{\hyperlink{Arducam_8h_a81b801c80862c07bcbe65126db52164c}{B\+U\+F\+F\+E\+R\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} \mbox{\hyperlink{structArducamCamera_acffc4cff7d9305f4dc20505b0cf74d30}{call\+Back\+Function}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Camera drive interface and information. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structArducamCamera_a465a44b60f126c47c1a1e26f94f97475}\label{structArducamCamera_a465a44b60f126c47c1a1e26f94f97475}} 
+\index{ArducamCamera@{ArducamCamera}!arducamCameraOp@{arducamCameraOp}}
+\index{arducamCameraOp@{arducamCameraOp}!ArducamCamera@{ArducamCamera}}
+\doxysubsubsection{\texorpdfstring{arducamCameraOp}{arducamCameraOp}}
+{\footnotesize\ttfamily const struct Camera\+Operations$\ast$ Arducam\+Camera\+::arducam\+Camera\+Op}
+
+Camera function interface \mbox{\Hypertarget{structArducamCamera_a1fd4f387d42fafa53f751f2d3a50e82c}\label{structArducamCamera_a1fd4f387d42fafa53f751f2d3a50e82c}} 
+\index{ArducamCamera@{ArducamCamera}!blockSize@{blockSize}}
+\index{blockSize@{blockSize}!ArducamCamera@{ArducamCamera}}
+\doxysubsubsection{\texorpdfstring{blockSize}{blockSize}}
+{\footnotesize\ttfamily uint8\+\_\+t Arducam\+Camera\+::block\+Size}
+
+The length of the callback function transmission \mbox{\Hypertarget{structArducamCamera_a3dd40388c20343fb13f2ae1b01da94e8}\label{structArducamCamera_a3dd40388c20343fb13f2ae1b01da94e8}} 
+\index{ArducamCamera@{ArducamCamera}!burstFirstFlag@{burstFirstFlag}}
+\index{burstFirstFlag@{burstFirstFlag}!ArducamCamera@{ArducamCamera}}
+\doxysubsubsection{\texorpdfstring{burstFirstFlag}{burstFirstFlag}}
+{\footnotesize\ttfamily uint8\+\_\+t Arducam\+Camera\+::burst\+First\+Flag}
+
+Flag bit for reading data for the first time in burst mode \mbox{\Hypertarget{structArducamCamera_acffc4cff7d9305f4dc20505b0cf74d30}\label{structArducamCamera_acffc4cff7d9305f4dc20505b0cf74d30}} 
+\index{ArducamCamera@{ArducamCamera}!callBackFunction@{callBackFunction}}
+\index{callBackFunction@{callBackFunction}!ArducamCamera@{ArducamCamera}}
+\doxysubsubsection{\texorpdfstring{callBackFunction}{callBackFunction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a81b801c80862c07bcbe65126db52164c}{B\+U\+F\+F\+E\+R\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} Arducam\+Camera\+::call\+Back\+Function}
+
+Camera callback function \mbox{\Hypertarget{structArducamCamera_a21e0e1636b773f044893c980f39262ab}\label{structArducamCamera_a21e0e1636b773f044893c980f39262ab}} 
+\index{ArducamCamera@{ArducamCamera}!cameraDataFormat@{cameraDataFormat}}
+\index{cameraDataFormat@{cameraDataFormat}!ArducamCamera@{ArducamCamera}}
+\doxysubsubsection{\texorpdfstring{cameraDataFormat}{cameraDataFormat}}
+{\footnotesize\ttfamily uint8\+\_\+t Arducam\+Camera\+::camera\+Data\+Format}
+
+The currently set image pixel format \mbox{\Hypertarget{structArducamCamera_a566bba6b4f9ada59bb3fe9b82df37409}\label{structArducamCamera_a566bba6b4f9ada59bb3fe9b82df37409}} 
+\index{ArducamCamera@{ArducamCamera}!cameraId@{cameraId}}
+\index{cameraId@{cameraId}!ArducamCamera@{ArducamCamera}}
+\doxysubsubsection{\texorpdfstring{cameraId}{cameraId}}
+{\footnotesize\ttfamily uint8\+\_\+t Arducam\+Camera\+::camera\+Id}
+
+Model of camera module \mbox{\Hypertarget{structArducamCamera_a7714744f53c9703a439bf8f4cc9d0662}\label{structArducamCamera_a7714744f53c9703a439bf8f4cc9d0662}} 
+\index{ArducamCamera@{ArducamCamera}!csPin@{csPin}}
+\index{csPin@{csPin}!ArducamCamera@{ArducamCamera}}
+\doxysubsubsection{\texorpdfstring{csPin}{csPin}}
+{\footnotesize\ttfamily int Arducam\+Camera\+::cs\+Pin}
+
+CS pin \mbox{\Hypertarget{structArducamCamera_ae16629c42644ebe55b8609a1b9f00bcb}\label{structArducamCamera_ae16629c42644ebe55b8609a1b9f00bcb}} 
+\index{ArducamCamera@{ArducamCamera}!currentPictureMode@{currentPictureMode}}
+\index{currentPictureMode@{currentPictureMode}!ArducamCamera@{ArducamCamera}}
+\doxysubsubsection{\texorpdfstring{currentPictureMode}{currentPictureMode}}
+{\footnotesize\ttfamily uint8\+\_\+t Arducam\+Camera\+::current\+Picture\+Mode}
+
+Currently set resolution \mbox{\Hypertarget{structArducamCamera_a00deab096c8a215134965b30cc035946}\label{structArducamCamera_a00deab096c8a215134965b30cc035946}} 
+\index{ArducamCamera@{ArducamCamera}!currentPixelFormat@{currentPixelFormat}}
+\index{currentPixelFormat@{currentPixelFormat}!ArducamCamera@{ArducamCamera}}
+\doxysubsubsection{\texorpdfstring{currentPixelFormat}{currentPixelFormat}}
+{\footnotesize\ttfamily uint8\+\_\+t Arducam\+Camera\+::current\+Pixel\+Format}
+
+The currently set image pixel format \mbox{\Hypertarget{structArducamCamera_aa89ea2811484145ee10ba2031df8a20d}\label{structArducamCamera_aa89ea2811484145ee10ba2031df8a20d}} 
+\index{ArducamCamera@{ArducamCamera}!myCameraInfo@{myCameraInfo}}
+\index{myCameraInfo@{myCameraInfo}!ArducamCamera@{ArducamCamera}}
+\doxysubsubsection{\texorpdfstring{myCameraInfo}{myCameraInfo}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structCameraInfo}{Camera\+Info}} Arducam\+Camera\+::my\+Camera\+Info}
+
+Basic information of the current camera \mbox{\Hypertarget{structArducamCamera_a931008407bcc8aaff983cca3df6eda07}\label{structArducamCamera_a931008407bcc8aaff983cca3df6eda07}} 
+\index{ArducamCamera@{ArducamCamera}!previewMode@{previewMode}}
+\index{previewMode@{previewMode}!ArducamCamera@{ArducamCamera}}
+\doxysubsubsection{\texorpdfstring{previewMode}{previewMode}}
+{\footnotesize\ttfamily uint8\+\_\+t Arducam\+Camera\+::preview\+Mode}
+
+Stream mode flag \mbox{\Hypertarget{structArducamCamera_a76dfe5e55658033342b10788d50fbf34}\label{structArducamCamera_a76dfe5e55658033342b10788d50fbf34}} 
+\index{ArducamCamera@{ArducamCamera}!receivedLength@{receivedLength}}
+\index{receivedLength@{receivedLength}!ArducamCamera@{ArducamCamera}}
+\doxysubsubsection{\texorpdfstring{receivedLength}{receivedLength}}
+{\footnotesize\ttfamily uint32\+\_\+t Arducam\+Camera\+::received\+Length}
+
+The remaining length of the picture \mbox{\Hypertarget{structArducamCamera_ae26950accff916b57616a84d53ebdd7b}\label{structArducamCamera_ae26950accff916b57616a84d53ebdd7b}} 
+\index{ArducamCamera@{ArducamCamera}!totalLength@{totalLength}}
+\index{totalLength@{totalLength}!ArducamCamera@{ArducamCamera}}
+\doxysubsubsection{\texorpdfstring{totalLength}{totalLength}}
+{\footnotesize\ttfamily uint32\+\_\+t Arducam\+Camera\+::total\+Length}
+
+The total length of the picture 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/lou/arducam\+Spi\+Doc/library\+C/\mbox{\hyperlink{Arducam_8h}{Arducam.\+h}}\end{DoxyCompactItemize}

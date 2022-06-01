@@ -1,1 +1,1 @@
-# spiMegaCamera
+# Arducam_Mega

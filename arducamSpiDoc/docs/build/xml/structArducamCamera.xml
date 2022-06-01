@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structArducamCamera" kind="struct" language="C++" prot="public">
+    <compoundname>ArducamCamera</compoundname>
+    <includes refid="Arducam_8h" local="no">Arducam.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structArducamCamera_1a7714744f53c9703a439bf8f4cc9d0662" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ArducamCamera::csPin</definition>
+        <argsstring></argsstring>
+        <name>csPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CS pin </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="235" column="5" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structArducamCamera_1ae26950accff916b57616a84d53ebdd7b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ArducamCamera::totalLength</definition>
+        <argsstring></argsstring>
+        <name>totalLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The total length of the picture </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="236" column="10" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structArducamCamera_1a76dfe5e55658033342b10788d50fbf34" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ArducamCamera::receivedLength</definition>
+        <argsstring></argsstring>
+        <name>receivedLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The remaining length of the picture </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="237" column="10" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structArducamCamera_1a1fd4f387d42fafa53f751f2d3a50e82c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ArducamCamera::blockSize</definition>
+        <argsstring></argsstring>
+        <name>blockSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The length of the callback function transmission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="238" column="9" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structArducamCamera_1a566bba6b4f9ada59bb3fe9b82df37409" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ArducamCamera::cameraId</definition>
+        <argsstring></argsstring>
+        <name>cameraId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Model of camera module </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="239" column="9" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structArducamCamera_1a21e0e1636b773f044893c980f39262ab" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ArducamCamera::cameraDataFormat</definition>
+        <argsstring></argsstring>
+        <name>cameraDataFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The currently set image pixel format </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="240" column="9" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structArducamCamera_1a3dd40388c20343fb13f2ae1b01da94e8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ArducamCamera::burstFirstFlag</definition>
+        <argsstring></argsstring>
+        <name>burstFirstFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag bit for reading data for the first time in burst mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="241" column="9" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structArducamCamera_1a931008407bcc8aaff983cca3df6eda07" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ArducamCamera::previewMode</definition>
+        <argsstring></argsstring>
+        <name>previewMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stream mode flag </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="242" column="9" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structArducamCamera_1a00deab096c8a215134965b30cc035946" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ArducamCamera::currentPixelFormat</definition>
+        <argsstring></argsstring>
+        <name>currentPixelFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The currently set image pixel format </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="243" column="9" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structArducamCamera_1ae16629c42644ebe55b8609a1b9f00bcb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ArducamCamera::currentPictureMode</definition>
+        <argsstring></argsstring>
+        <name>currentPictureMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Currently set resolution </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="244" column="9" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structArducamCamera_1aa89ea2811484145ee10ba2031df8a20d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structCameraInfo" kindref="compound">CameraInfo</ref></type>
+        <definition>struct CameraInfo ArducamCamera::myCameraInfo</definition>
+        <argsstring></argsstring>
+        <name>myCameraInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Basic information of the current camera </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="244" column="9" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structArducamCamera_1a465a44b60f126c47c1a1e26f94f97475" prot="public" static="no" mutable="no">
+        <type>const struct CameraOperations *</type>
+        <definition>const struct CameraOperations* ArducamCamera::arducamCameraOp</definition>
+        <argsstring></argsstring>
+        <name>arducamCameraOp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera function interface </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="246" column="30" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structArducamCamera_1acffc4cff7d9305f4dc20505b0cf74d30" prot="public" static="no" mutable="no">
+        <type><ref refid="Arducam_8h_1a81b801c80862c07bcbe65126db52164c" kindref="member">BUFFER_CALLBACK</ref></type>
+        <definition>BUFFER_CALLBACK ArducamCamera::callBackFunction</definition>
+        <argsstring></argsstring>
+        <name>callBackFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Camera callback function </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="247" column="17" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Camera drive interface and information. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>CameraInfo</label>
+        <link refid="structCameraInfo"/>
+      </node>
+      <node id="1">
+        <label>ArducamCamera</label>
+        <link refid="structArducamCamera"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>myCameraInfo</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="234" column="15" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="234" bodyend="248"/>
+    <listofallmembers>
+      <member refid="structArducamCamera_1a465a44b60f126c47c1a1e26f94f97475" prot="public" virt="non-virtual"><scope>ArducamCamera</scope><name>arducamCameraOp</name></member>
+      <member refid="structArducamCamera_1a1fd4f387d42fafa53f751f2d3a50e82c" prot="public" virt="non-virtual"><scope>ArducamCamera</scope><name>blockSize</name></member>
+      <member refid="structArducamCamera_1a3dd40388c20343fb13f2ae1b01da94e8" prot="public" virt="non-virtual"><scope>ArducamCamera</scope><name>burstFirstFlag</name></member>
+      <member refid="structArducamCamera_1acffc4cff7d9305f4dc20505b0cf74d30" prot="public" virt="non-virtual"><scope>ArducamCamera</scope><name>callBackFunction</name></member>
+      <member refid="structArducamCamera_1a21e0e1636b773f044893c980f39262ab" prot="public" virt="non-virtual"><scope>ArducamCamera</scope><name>cameraDataFormat</name></member>
+      <member refid="structArducamCamera_1a566bba6b4f9ada59bb3fe9b82df37409" prot="public" virt="non-virtual"><scope>ArducamCamera</scope><name>cameraId</name></member>
+      <member refid="structArducamCamera_1a7714744f53c9703a439bf8f4cc9d0662" prot="public" virt="non-virtual"><scope>ArducamCamera</scope><name>csPin</name></member>
+      <member refid="structArducamCamera_1ae16629c42644ebe55b8609a1b9f00bcb" prot="public" virt="non-virtual"><scope>ArducamCamera</scope><name>currentPictureMode</name></member>
+      <member refid="structArducamCamera_1a00deab096c8a215134965b30cc035946" prot="public" virt="non-virtual"><scope>ArducamCamera</scope><name>currentPixelFormat</name></member>
+      <member refid="structArducamCamera_1aa89ea2811484145ee10ba2031df8a20d" prot="public" virt="non-virtual"><scope>ArducamCamera</scope><name>myCameraInfo</name></member>
+      <member refid="structArducamCamera_1a931008407bcc8aaff983cca3df6eda07" prot="public" virt="non-virtual"><scope>ArducamCamera</scope><name>previewMode</name></member>
+      <member refid="structArducamCamera_1a76dfe5e55658033342b10788d50fbf34" prot="public" virt="non-virtual"><scope>ArducamCamera</scope><name>receivedLength</name></member>
+      <member refid="structArducamCamera_1ae26950accff916b57616a84d53ebdd7b" prot="public" virt="non-virtual"><scope>ArducamCamera</scope><name>totalLength</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,57 @@
+STM32F103C8T6
+========================
+.. note::
+    This demo is based on a 5MP camera
+
+Hardware connection
+*********************
+
+==========   =========================  
+Camera pin   Development board pins    
+==========   ========================= 
+VCC          3.3
+GND          GND
+SCK          PA5
+MISO         PA6
+MOSI         PA7
+CS           PA4
+==========   ========================= 
+
+==================   =========================  
+Serial port module   Development board pins    
+==================   ========================= 
+GND			 		 GND 
+RXD          		 PA9
+TXD          		 PA10
+==================   =========================
+
+
+full_featured
+*********************
+
+Select platform
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: /_static/images/stm32/selectPlatform.jpg
+
+Compile the program
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: /_static/images/stm32/build.jpg
+
+Configuration downloader
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: /_static/images/stm32/configJlink.jpg
+
+Download program
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: /_static/images/stm32/download.jpg
+
+
+
+Effect demonstration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: /_static/images/GUI/image.bmp

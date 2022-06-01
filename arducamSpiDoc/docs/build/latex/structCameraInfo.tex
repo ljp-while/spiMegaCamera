@@ -1,0 +1,100 @@
+\hypertarget{structCameraInfo}{}\doxysection{Camera\+Info Struct Reference}
+\label{structCameraInfo}\index{CameraInfo@{CameraInfo}}
+
+
+Basic information of the camera module.  
+
+
+
+
+{\ttfamily \#include $<$Arducam.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{structCameraInfo_abbb53648ae151fa253a9e3d9ddacdb66}{camera\+Id}}
+\item 
+int \mbox{\hyperlink{structCameraInfo_a875016ea9b027f71c1591fc67c8ef2ec}{support\+Resolution}}
+\item 
+int \mbox{\hyperlink{structCameraInfo_a102f97a61395732beae18f32acb846fe}{support\+Special\+Effects}}
+\item 
+unsigned long \mbox{\hyperlink{structCameraInfo_a3c0c6782d143fae4f0db02c2e57eb43c}{exposure\+Value\+Max}}
+\item 
+unsigned int \mbox{\hyperlink{structCameraInfo_a8f43406fdfc2f0b5e1dc4e7754064426}{exposure\+Value\+Min}}
+\item 
+unsigned int \mbox{\hyperlink{structCameraInfo_ae607a6b13202c4bf9fa2c58b59313fa5}{gain\+Value\+Max}}
+\item 
+unsigned int \mbox{\hyperlink{structCameraInfo_a638bfe2a43701e8030a106f660325181}{gain\+Value\+Min}}
+\item 
+unsigned char \mbox{\hyperlink{structCameraInfo_a61a2a1ca9256dd8cd156e34b4d9a6a29}{support\+Focus}}
+\item 
+unsigned char \mbox{\hyperlink{structCameraInfo_ae7517e2dd74d57048c8265af6d2790f4}{support\+Sharpness}}
+\item 
+\mbox{\Hypertarget{structCameraInfo_a274bc11157c4294d8b41a7af4d864143}\label{structCameraInfo_a274bc11157c4294d8b41a7af4d864143}} 
+unsigned char {\bfseries device\+Address}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Basic information of the camera module. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structCameraInfo_abbb53648ae151fa253a9e3d9ddacdb66}\label{structCameraInfo_abbb53648ae151fa253a9e3d9ddacdb66}} 
+\index{CameraInfo@{CameraInfo}!cameraId@{cameraId}}
+\index{cameraId@{cameraId}!CameraInfo@{CameraInfo}}
+\doxysubsubsection{\texorpdfstring{cameraId}{cameraId}}
+{\footnotesize\ttfamily char$\ast$ Camera\+Info\+::camera\+Id}
+
+Model of camera module \mbox{\Hypertarget{structCameraInfo_a3c0c6782d143fae4f0db02c2e57eb43c}\label{structCameraInfo_a3c0c6782d143fae4f0db02c2e57eb43c}} 
+\index{CameraInfo@{CameraInfo}!exposureValueMax@{exposureValueMax}}
+\index{exposureValueMax@{exposureValueMax}!CameraInfo@{CameraInfo}}
+\doxysubsubsection{\texorpdfstring{exposureValueMax}{exposureValueMax}}
+{\footnotesize\ttfamily unsigned long Camera\+Info\+::exposure\+Value\+Max}
+
+Maximum exposure time supported by the camera module \mbox{\Hypertarget{structCameraInfo_a8f43406fdfc2f0b5e1dc4e7754064426}\label{structCameraInfo_a8f43406fdfc2f0b5e1dc4e7754064426}} 
+\index{CameraInfo@{CameraInfo}!exposureValueMin@{exposureValueMin}}
+\index{exposureValueMin@{exposureValueMin}!CameraInfo@{CameraInfo}}
+\doxysubsubsection{\texorpdfstring{exposureValueMin}{exposureValueMin}}
+{\footnotesize\ttfamily unsigned int Camera\+Info\+::exposure\+Value\+Min}
+
+Minimum exposure time supported by the camera module \mbox{\Hypertarget{structCameraInfo_ae607a6b13202c4bf9fa2c58b59313fa5}\label{structCameraInfo_ae607a6b13202c4bf9fa2c58b59313fa5}} 
+\index{CameraInfo@{CameraInfo}!gainValueMax@{gainValueMax}}
+\index{gainValueMax@{gainValueMax}!CameraInfo@{CameraInfo}}
+\doxysubsubsection{\texorpdfstring{gainValueMax}{gainValueMax}}
+{\footnotesize\ttfamily unsigned int Camera\+Info\+::gain\+Value\+Max}
+
+Maximum gain supported by the camera module \mbox{\Hypertarget{structCameraInfo_a638bfe2a43701e8030a106f660325181}\label{structCameraInfo_a638bfe2a43701e8030a106f660325181}} 
+\index{CameraInfo@{CameraInfo}!gainValueMin@{gainValueMin}}
+\index{gainValueMin@{gainValueMin}!CameraInfo@{CameraInfo}}
+\doxysubsubsection{\texorpdfstring{gainValueMin}{gainValueMin}}
+{\footnotesize\ttfamily unsigned int Camera\+Info\+::gain\+Value\+Min}
+
+Minimum gain supported by the camera module \mbox{\Hypertarget{structCameraInfo_a61a2a1ca9256dd8cd156e34b4d9a6a29}\label{structCameraInfo_a61a2a1ca9256dd8cd156e34b4d9a6a29}} 
+\index{CameraInfo@{CameraInfo}!supportFocus@{supportFocus}}
+\index{supportFocus@{supportFocus}!CameraInfo@{CameraInfo}}
+\doxysubsubsection{\texorpdfstring{supportFocus}{supportFocus}}
+{\footnotesize\ttfamily unsigned char Camera\+Info\+::support\+Focus}
+
+Does the camera module support the focus function \mbox{\Hypertarget{structCameraInfo_a875016ea9b027f71c1591fc67c8ef2ec}\label{structCameraInfo_a875016ea9b027f71c1591fc67c8ef2ec}} 
+\index{CameraInfo@{CameraInfo}!supportResolution@{supportResolution}}
+\index{supportResolution@{supportResolution}!CameraInfo@{CameraInfo}}
+\doxysubsubsection{\texorpdfstring{supportResolution}{supportResolution}}
+{\footnotesize\ttfamily int Camera\+Info\+::support\+Resolution}
+
+Resolution supported by the camera module \mbox{\Hypertarget{structCameraInfo_ae7517e2dd74d57048c8265af6d2790f4}\label{structCameraInfo_ae7517e2dd74d57048c8265af6d2790f4}} 
+\index{CameraInfo@{CameraInfo}!supportSharpness@{supportSharpness}}
+\index{supportSharpness@{supportSharpness}!CameraInfo@{CameraInfo}}
+\doxysubsubsection{\texorpdfstring{supportSharpness}{supportSharpness}}
+{\footnotesize\ttfamily unsigned char Camera\+Info\+::support\+Sharpness}
+
+Does the camera module support the sharpening function \mbox{\Hypertarget{structCameraInfo_a102f97a61395732beae18f32acb846fe}\label{structCameraInfo_a102f97a61395732beae18f32acb846fe}} 
+\index{CameraInfo@{CameraInfo}!supportSpecialEffects@{supportSpecialEffects}}
+\index{supportSpecialEffects@{supportSpecialEffects}!CameraInfo@{CameraInfo}}
+\doxysubsubsection{\texorpdfstring{supportSpecialEffects}{supportSpecialEffects}}
+{\footnotesize\ttfamily int Camera\+Info\+::support\+Special\+Effects}
+
+Special effects supported by the camera module 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/lou/arducam\+Spi\+Doc/library\+C/\mbox{\hyperlink{Arducam_8h}{Arducam.\+h}}\end{DoxyCompactItemize}

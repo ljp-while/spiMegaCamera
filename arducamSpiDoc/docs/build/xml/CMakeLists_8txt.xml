@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="CMakeLists_8txt" kind="file" language="C++">
+    <compoundname>CMakeLists.txt</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">add_library<sp/>(<ref refid="classArducam" kindref="compound">Arducam</ref><sp/></highlight><highlight class="stringliteral">&quot;Arducam.c&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Arducam.h&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">target_include_directories(<ref refid="classArducam" kindref="compound">Arducam</ref><sp/>PUBLIC<sp/>.)</highlight></codeline>
+    </programlisting>
+    <location file="/home/lou/arducamSpiDoc/libraryC/CMakeLists.txt"/>
+  </compounddef>
+</doxygen>

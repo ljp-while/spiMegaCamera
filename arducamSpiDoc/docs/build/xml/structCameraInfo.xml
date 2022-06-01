@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structCameraInfo" kind="struct" language="C++" prot="public">
+    <compoundname>CameraInfo</compoundname>
+    <includes refid="Arducam_8h" local="no">Arducam.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCameraInfo_1abbb53648ae151fa253a9e3d9ddacdb66" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* CameraInfo::cameraId</definition>
+        <argsstring></argsstring>
+        <name>cameraId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Model of camera module </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="45" column="6" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCameraInfo_1a875016ea9b027f71c1591fc67c8ef2ec" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CameraInfo::supportResolution</definition>
+        <argsstring></argsstring>
+        <name>supportResolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resolution supported by the camera module </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="46" column="5" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCameraInfo_1a102f97a61395732beae18f32acb846fe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CameraInfo::supportSpecialEffects</definition>
+        <argsstring></argsstring>
+        <name>supportSpecialEffects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Special effects supported by the camera module </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="47" column="5" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCameraInfo_1a3c0c6782d143fae4f0db02c2e57eb43c" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long CameraInfo::exposureValueMax</definition>
+        <argsstring></argsstring>
+        <name>exposureValueMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum exposure time supported by the camera module </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="48" column="15" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCameraInfo_1a8f43406fdfc2f0b5e1dc4e7754064426" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CameraInfo::exposureValueMin</definition>
+        <argsstring></argsstring>
+        <name>exposureValueMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum exposure time supported by the camera module </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="49" column="14" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCameraInfo_1ae607a6b13202c4bf9fa2c58b59313fa5" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CameraInfo::gainValueMax</definition>
+        <argsstring></argsstring>
+        <name>gainValueMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum gain supported by the camera module </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="50" column="14" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCameraInfo_1a638bfe2a43701e8030a106f660325181" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CameraInfo::gainValueMin</definition>
+        <argsstring></argsstring>
+        <name>gainValueMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum gain supported by the camera module </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="51" column="14" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCameraInfo_1a61a2a1ca9256dd8cd156e34b4d9a6a29" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char CameraInfo::supportFocus</definition>
+        <argsstring></argsstring>
+        <name>supportFocus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Does the camera module support the focus function </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="52" column="15" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCameraInfo_1ae7517e2dd74d57048c8265af6d2790f4" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char CameraInfo::supportSharpness</definition>
+        <argsstring></argsstring>
+        <name>supportSharpness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Does the camera module support the sharpening function </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="53" column="15" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCameraInfo_1a274bc11157c4294d8b41a7af4d864143" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char CameraInfo::deviceAddress</definition>
+        <argsstring></argsstring>
+        <name>deviceAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="54" column="15" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Basic information of the camera module. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lou/arducamSpiDoc/libraryC/Arducam.h" line="44" column="17" bodyfile="/home/lou/arducamSpiDoc/libraryC/Arducam.h" bodystart="44" bodyend="55"/>
+    <listofallmembers>
+      <member refid="structCameraInfo_1abbb53648ae151fa253a9e3d9ddacdb66" prot="public" virt="non-virtual"><scope>CameraInfo</scope><name>cameraId</name></member>
+      <member refid="structCameraInfo_1a274bc11157c4294d8b41a7af4d864143" prot="public" virt="non-virtual"><scope>CameraInfo</scope><name>deviceAddress</name></member>
+      <member refid="structCameraInfo_1a3c0c6782d143fae4f0db02c2e57eb43c" prot="public" virt="non-virtual"><scope>CameraInfo</scope><name>exposureValueMax</name></member>
+      <member refid="structCameraInfo_1a8f43406fdfc2f0b5e1dc4e7754064426" prot="public" virt="non-virtual"><scope>CameraInfo</scope><name>exposureValueMin</name></member>
+      <member refid="structCameraInfo_1ae607a6b13202c4bf9fa2c58b59313fa5" prot="public" virt="non-virtual"><scope>CameraInfo</scope><name>gainValueMax</name></member>
+      <member refid="structCameraInfo_1a638bfe2a43701e8030a106f660325181" prot="public" virt="non-virtual"><scope>CameraInfo</scope><name>gainValueMin</name></member>
+      <member refid="structCameraInfo_1a61a2a1ca9256dd8cd156e34b4d9a6a29" prot="public" virt="non-virtual"><scope>CameraInfo</scope><name>supportFocus</name></member>
+      <member refid="structCameraInfo_1a875016ea9b027f71c1591fc67c8ef2ec" prot="public" virt="non-virtual"><scope>CameraInfo</scope><name>supportResolution</name></member>
+      <member refid="structCameraInfo_1ae7517e2dd74d57048c8265af6d2790f4" prot="public" virt="non-virtual"><scope>CameraInfo</scope><name>supportSharpness</name></member>
+      <member refid="structCameraInfo_1a102f97a61395732beae18f32acb846fe" prot="public" virt="non-virtual"><scope>CameraInfo</scope><name>supportSpecialEffects</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

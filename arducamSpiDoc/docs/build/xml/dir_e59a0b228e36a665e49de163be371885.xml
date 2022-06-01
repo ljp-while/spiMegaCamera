@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_e59a0b228e36a665e49de163be371885" kind="dir">
+    <compoundname>/home/lou/arducamSpiCamera/spiCamera</compoundname>
+    <innerfile refid="Arducam_8c">Arducam.c</innerfile>
+    <innerfile refid="Arducam_8h">Arducam.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lou/arducamSpiCamera/spiCamera/"/>
+  </compounddef>
+</doxygen>

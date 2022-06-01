@@ -1,0 +1,57 @@
+
+MSP430
+========================
+.. note::
+    This demo is based on a 5MP camera
+
+
+Hardware connection
+*********************
+
+==========   =========================  
+Camera pin   Development board pins    
+==========   ========================= 
+VCC          VCC
+GND          GND
+SCK          P1.5
+MISO         P1.6
+MOSI         P1.7
+CS           P2.0
+==========   ========================= 
+
+==================   =========================  
+Serial port module   Development board pins    
+==================   ========================= 
+GND			 		 GND 
+RXD          		 P1.2
+TXD          		 P1.1
+==================   =========================
+
+
+
+full_featured
+*********************
+
+Select platform
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: /_static/images/msp30/selectPlatform1.jpg
+.. image:: /_static/images/msp30/selectPlatform2.jpg
+.. image:: /_static/images/msp30/selectPlatform3.jpg
+
+Compile the program
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: /_static/images/msp30/build.jpg
+
+Download program
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: /_static/images/msp30/download.jpg
+
+
+
+Effect demonstration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: /_static/images/GUI/image.bmp

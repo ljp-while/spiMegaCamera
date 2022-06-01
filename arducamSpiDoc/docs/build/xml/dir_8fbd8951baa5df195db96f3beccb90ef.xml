@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_8fbd8951baa5df195db96f3beccb90ef" kind="dir">
+    <compoundname>/home/lou/arducamSpiDoc/libraryC++</compoundname>
+    <innerfile refid="Arducam_8hpp">Arducam.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lou/arducamSpiDoc/libraryC++/"/>
+  </compounddef>
+</doxygen>

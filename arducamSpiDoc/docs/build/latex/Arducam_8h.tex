@@ -1,0 +1,1174 @@
+\hypertarget{Arducam_8h}{}\doxysection{/home/lou/arducam\+Spi\+Doc/library\+C/\+Arducam.h File Reference}
+\label{Arducam_8h}\index{/home/lou/arducamSpiDoc/libraryC/Arducam.h@{/home/lou/arducamSpiDoc/libraryC/Arducam.h}}
+{\ttfamily \#include \char`\"{}Platform.\+h\char`\"{}}\newline
+Include dependency graph for Arducam.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{Arducam_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{Arducam_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structCameraInfo}{Camera\+Info}}
+\begin{DoxyCompactList}\small\item\em Basic information of the camera module. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}}
+\begin{DoxyCompactList}\small\item\em Camera drive interface and information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint8\+\_\+t($\ast$ \mbox{\hyperlink{Arducam_8h_a81b801c80862c07bcbe65126db52164c}{B\+U\+F\+F\+E\+R\+\_\+\+C\+A\+L\+L\+B\+A\+CK}}) (uint8\+\_\+t $\ast$buffer, uint8\+\_\+t lenght)
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \{ \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1ad78fefb3ad26c90b550454e8b8505a1e}{C\+A\+M\+\_\+\+E\+R\+R\+\_\+\+S\+U\+C\+C\+E\+SS}} = 0, 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1a667dfc004f98c4948c41661580a45a28}{C\+A\+M\+\_\+\+E\+R\+R\+\_\+\+N\+O\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} = -\/1
+ \}
+\begin{DoxyCompactList}\small\item\em Camera status. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+DE}} \{ \newline
+\mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015a03362277ce6d8880e21b186451001f3a}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+Q\+Q\+V\+GA}} =0x00, 
+\mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015a7491cfab5664b60bfafa41bf26e59a5f}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+Q\+V\+GA}} = 0x01, 
+\mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015a43e66f40b7746cfa3626595dfafe1315}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+V\+GA}} = 0x02, 
+\mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015a3c4e48a704ef557d74fb651d4443f105}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+S\+V\+GA}} = 0x03, 
+\newline
+\mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015a02b5580d07deb175b21529743e43497a}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+HD}} = 0x04, 
+\mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015a305826f88a7e28698f8dafc3e76f4ca8}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+S\+X\+G\+AM}} = 0x05, 
+\mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015a96ff299d23aa8d61a7991669ddffed63}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+U\+X\+GA}} = 0x06, 
+\mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015a673bccb9bab53474c4cac256a18b7290}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+F\+HD}} = 0x07, 
+\newline
+\mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015a5aada59aa0f3d06c022c9674da6f31a0}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+Q\+X\+GA}} = 0x08, 
+\mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015ad2563a3923a421d35d64192ad7e09b85}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+W\+Q\+X\+G\+A2}} = 0x09, 
+\mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015a2fab80f52b895343f22dc423f9acb687}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+9}} = 0x0a
+ \}
+\begin{DoxyCompactList}\small\item\em Configure camera resolution. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{Arducam_8h_a039dba5eae31265427b4829d0db59231}{C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+EL}} \{ \newline
+\mbox{\hyperlink{Arducam_8h_a039dba5eae31265427b4829d0db59231a9b033b978300e447a7e121ceb56c8fe5}{C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+3}} =6, 
+\mbox{\hyperlink{Arducam_8h_a039dba5eae31265427b4829d0db59231ad13726f2dfe529fe673b5902ffc9ac9a}{C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+2}} =4, 
+\mbox{\hyperlink{Arducam_8h_a039dba5eae31265427b4829d0db59231a3886a3200df9f8f761bb1fa2cc7b3a13}{C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+1}} =2, 
+\mbox{\hyperlink{Arducam_8h_a039dba5eae31265427b4829d0db59231ab46683fb5e0b681da8d34fb95d39c07c}{C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+F\+A\+U\+LT}} =0, 
+\newline
+\mbox{\hyperlink{Arducam_8h_a039dba5eae31265427b4829d0db59231aac51725ee26af7d2bc2581254b8d2aec}{C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+1}} =1, 
+\mbox{\hyperlink{Arducam_8h_a039dba5eae31265427b4829d0db59231a617219ff57ab254702c5485762ba9eee}{C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+2}} =3, 
+\mbox{\hyperlink{Arducam_8h_a039dba5eae31265427b4829d0db59231a418a4649ee36450b711a34f38605303d}{C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+3}} =5
+ \}
+\begin{DoxyCompactList}\small\item\em Configure camera contrast level. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19aff}{C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+EL}} \{ \newline
+\mbox{\hyperlink{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affacfb9c23415a7a622d739a294396e9aa5}{C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+3}} =6, 
+\mbox{\hyperlink{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affa2eb5f0d1f02c82b42b49291d3ed8a7d6}{C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+2}} =4, 
+\mbox{\hyperlink{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affaf17f251b5ab3d1f6fea9971614135211}{C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+1}} =2, 
+\mbox{\hyperlink{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affa589e2e4864f518630aab919b36f3a8f6}{C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+F\+A\+U\+LT}} =0, 
+\newline
+\mbox{\hyperlink{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affa30bffff8f7c413498cdfca7c69d52d0d}{C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+E\+L\+\_\+1}} =1, 
+\mbox{\hyperlink{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affa961fd26f93b132487d6c4730bb9816ca}{C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+E\+L\+\_\+2}} =3, 
+\mbox{\hyperlink{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affa637dd6bf4e0512ad42736de67de2d35f}{C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+E\+L\+\_\+3}} =5
+ \}
+\begin{DoxyCompactList}\small\item\em Configure camera EV level. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011}{C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+EL}} \{ \newline
+\mbox{\hyperlink{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a2c0eec87b6c94d97ae43d6aace7ff0a4}{C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+3}} =6, 
+\mbox{\hyperlink{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a918b8e9ec70c2d7d8a35da40987fca03}{C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+2}} =4, 
+\mbox{\hyperlink{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a4b9e2b9fd076bea05995eb52e7000717}{C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+1}} =2, 
+\mbox{\hyperlink{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a4d288739e2c439be0b2b29e5c5a76fcf}{C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+F\+A\+U\+LT}} =0, 
+\newline
+\mbox{\hyperlink{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a9e9df1bdbdadd8a702eaabc27f22ed29}{C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+E\+L\+\_\+1}} =1, 
+\mbox{\hyperlink{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011aa098dd653991912bd28f79ba0df104dc}{C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+E\+L\+\_\+2}} =3, 
+\mbox{\hyperlink{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a76771f32c32c75a197367efac57e9768}{C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+E\+L\+\_\+3}} =5
+ \}
+\begin{DoxyCompactList}\small\item\em Configure camera stauration level. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71}{C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+EL}} \{ \newline
+\mbox{\hyperlink{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a0ced35cd858431788a18d11305942b2b}{C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+4}} =8, 
+\mbox{\hyperlink{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a24a5961269a5957ec20c130ae1d08273}{C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+3}} =6, 
+\mbox{\hyperlink{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71aa38090974c30465438adab560a012a9c}{C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+2}} =4, 
+\mbox{\hyperlink{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a98c74b297dc8fb5d62ff570c3b494a99}{C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+1}} =2, 
+\newline
+\mbox{\hyperlink{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a0aa2a4f98eb36a1ff46031213aa69dbf}{C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+F\+A\+U\+LT}} =0, 
+\mbox{\hyperlink{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a1acca8ec51ab8406ec2861df57a3be2e}{C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+1}} =1, 
+\mbox{\hyperlink{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71ae37e08e5e5ffcda7d38d4bf9af87f1d9}{C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+2}} =3, 
+\mbox{\hyperlink{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a25b6b6f8e0f0e29bf6466114509d3e2e}{C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+3}} =5, 
+\newline
+\mbox{\hyperlink{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a166e43e536a1b7684bf5ddc47e45885c}{C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+4}} =7
+ \}
+\begin{DoxyCompactList}\small\item\em Configure camera brightness level. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7}{C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+EL}} \{ \newline
+\mbox{\hyperlink{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a56078d8749e436aac4f2c2ef92597ab1}{C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+\+A\+U\+TO}} =0, 
+\mbox{\hyperlink{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7aae9e8ea1af173d3418582874765cda8d}{C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+1}}, 
+\mbox{\hyperlink{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7abe8405599dc09f7210f025b922a9134c}{C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+2}}, 
+\mbox{\hyperlink{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7aa6751398f8b32bb16bd83457e4f7e11a}{C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+3}}, 
+\newline
+\mbox{\hyperlink{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a770607f4263a3e91f9c7e95dd1462f81}{C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+4}}, 
+\mbox{\hyperlink{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a1075693be8bcef3d585a897294599311}{C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+5}}, 
+\mbox{\hyperlink{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a6414026ceddb166ede78020ccdc2c302}{C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+6}}, 
+\mbox{\hyperlink{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a3997104f0c7c04db4bb400ce61da2404}{C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+7}}, 
+\newline
+\mbox{\hyperlink{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a579c04f9239f7758a46792a8184ea54a}{C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+8}}
+ \}
+\begin{DoxyCompactList}\small\item\em Configure camera Sharpness level. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{Arducam_8h_a79f9eea25f8ca9df7e0773ab408baed7}{C\+A\+M\+\_\+\+V\+I\+D\+E\+O\+\_\+\+M\+O\+DE}} \{ \mbox{\hyperlink{Arducam_8h_a79f9eea25f8ca9df7e0773ab408baed7a94446b4b6cb86a83016ed33022a8f09e}{C\+A\+M\+\_\+\+V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+E\+\_\+0}} = 1, 
+\mbox{\hyperlink{Arducam_8h_a79f9eea25f8ca9df7e0773ab408baed7a573f34bb7a6e52f8b74da47385f3c550}{C\+A\+M\+\_\+\+V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+E\+\_\+1}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em Configure resolution in video streaming mode. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{Arducam_8h_ae9748ceecc6f11421cb46fc489606338}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+P\+I\+X\+\_\+\+F\+MT}} \{ \mbox{\hyperlink{Arducam_8h_ae9748ceecc6f11421cb46fc489606338ad6a378f425b18247bc2adce64fa3af9a}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B565}} = 0x02, 
+\mbox{\hyperlink{Arducam_8h_ae9748ceecc6f11421cb46fc489606338a8a7afaef9a95f8d85c7147481f395f36}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+J\+PG}} = 0x01, 
+\mbox{\hyperlink{Arducam_8h_ae9748ceecc6f11421cb46fc489606338ab3e1c0bf1206a328aa95779d868024a2}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+Y\+UV}} = 0x03, 
+\mbox{\hyperlink{Arducam_8h_ae9748ceecc6f11421cb46fc489606338ad29ea6bdf677352692fedfaeec0ee750}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+N\+O\+NE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Configure image pixel format. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{Arducam_8h_a643d0ad26131376e247aab82485e0095}{C\+A\+M\+\_\+\+W\+H\+I\+T\+E\+\_\+\+B\+A\+L\+A\+N\+CE}} \{ \newline
+\mbox{\hyperlink{Arducam_8h_a643d0ad26131376e247aab82485e0095ab158e9dcb33756e8036f68502c627cb8}{C\+A\+M\+\_\+\+W\+H\+I\+T\+E\+\_\+\+B\+A\+L\+A\+N\+C\+E\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+F\+A\+U\+LT}} =0, 
+\mbox{\hyperlink{Arducam_8h_a643d0ad26131376e247aab82485e0095a0066ad0339abd61e6a2878bca5bc4803}{C\+A\+M\+\_\+\+W\+H\+I\+T\+E\+\_\+\+B\+A\+L\+A\+N\+C\+E\+\_\+\+M\+O\+D\+E\+\_\+\+S\+U\+N\+NY}}, 
+\mbox{\hyperlink{Arducam_8h_a643d0ad26131376e247aab82485e0095a376561d470ebdb1fbfbc6464d556cbf3}{C\+A\+M\+\_\+\+W\+H\+I\+T\+E\+\_\+\+B\+A\+L\+A\+N\+C\+E\+\_\+\+M\+O\+D\+E\+\_\+\+O\+F\+F\+I\+CE}}, 
+\mbox{\hyperlink{Arducam_8h_a643d0ad26131376e247aab82485e0095a774ec5e6f557a2ed4d2a1607917bf42a}{C\+A\+M\+\_\+\+W\+H\+I\+T\+E\+\_\+\+B\+A\+L\+A\+N\+C\+E\+\_\+\+M\+O\+D\+E\+\_\+\+C\+L\+O\+U\+DY}}, 
+\newline
+\mbox{\hyperlink{Arducam_8h_a643d0ad26131376e247aab82485e0095a587bdf93698d9b3a3d8b7f97304b139e}{C\+A\+M\+\_\+\+W\+H\+I\+T\+E\+\_\+\+B\+A\+L\+A\+N\+C\+E\+\_\+\+M\+O\+D\+E\+\_\+\+H\+O\+ME}}
+ \}
+\begin{DoxyCompactList}\small\item\em Configure white balance mode. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{Arducam_8h_a1396f1daef6526339ee8abe10a55c375}{C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+FX}} \{ \newline
+\mbox{\hyperlink{Arducam_8h_a1396f1daef6526339ee8abe10a55c375aa49d8377e2747f77e4bf613c850194ed}{C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{Arducam_8h_a1396f1daef6526339ee8abe10a55c375a11048290f31c05cbdb76f4b34a16d351}{C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+B\+L\+U\+E\+I\+SH}}, 
+\mbox{\hyperlink{Arducam_8h_a1396f1daef6526339ee8abe10a55c375a69103867116a636e85511892cc61104f}{C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+R\+E\+D\+I\+SH}}, 
+\mbox{\hyperlink{Arducam_8h_a1396f1daef6526339ee8abe10a55c375abc189051b7ce7f3db2d97027064c22fd}{C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+BW}}, 
+\newline
+\mbox{\hyperlink{Arducam_8h_a1396f1daef6526339ee8abe10a55c375a62e9c1cde01042a1a1301d4b203a4295}{C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+S\+E\+P\+IA}}, 
+\mbox{\hyperlink{Arducam_8h_a1396f1daef6526339ee8abe10a55c375aa44e99955a02f7b181fa01b1f606cf05}{C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+N\+E\+G\+A\+T\+I\+VE}}, 
+\mbox{\hyperlink{Arducam_8h_a1396f1daef6526339ee8abe10a55c375a7051f683fb111209375716eee162ba3b}{C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+G\+R\+A\+S\+S\+\_\+\+G\+R\+E\+EN}}, 
+\mbox{\hyperlink{Arducam_8h_a1396f1daef6526339ee8abe10a55c375a965a6a727e8960b91144dc036e44506a}{C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+O\+V\+E\+R\+\_\+\+E\+X\+P\+O\+S\+U\+RE}}, 
+\newline
+\mbox{\hyperlink{Arducam_8h_a1396f1daef6526339ee8abe10a55c375ac9ec846d3dab758529de003a1a9244d8}{C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+S\+O\+L\+A\+R\+I\+ZE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Configure special effects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} \mbox{\hyperlink{Arducam_8h_ada4a7f048d83ba0fe3a3c01f2588f6dd}{create\+Arducam\+Camera}} (int cs)
+\begin{DoxyCompactList}\small\item\em Create a camera instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_abb99665a6210474dbc5485efe40e569c}{begin}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera)
+\begin{DoxyCompactList}\small\item\em Initialize the configuration of the camera module. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_ada9dc5817837f7cc41fdeece2aef7ede}{take\+Picture}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, \mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+DE}} mode, \mbox{\hyperlink{Arducam_8h_ae9748ceecc6f11421cb46fc489606338}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+P\+I\+X\+\_\+\+F\+MT}} pixel\+\_\+format)
+\begin{DoxyCompactList}\small\item\em Start a snapshot with specified resolution and pixel format. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_ac6035b7faf84afc745ad232df945f33a}{take\+Multi\+Pictures}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, \mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+DE}} mode, \mbox{\hyperlink{Arducam_8h_ae9748ceecc6f11421cb46fc489606338}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+P\+I\+X\+\_\+\+F\+MT}} pixel\+\_\+format, uint8\+\_\+t number)
+\begin{DoxyCompactList}\small\item\em Start multi capture with specified number of image. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_aee5a9ed5de4b2eafa1e2a3ccc10057a6}{start\+Preview}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, \mbox{\hyperlink{Arducam_8h_a79f9eea25f8ca9df7e0773ab408baed7}{C\+A\+M\+\_\+\+V\+I\+D\+E\+O\+\_\+\+M\+O\+DE}} mode)
+\begin{DoxyCompactList}\small\item\em Start preview with specified resolution mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_ab4c6ef63c66d7cf3ea0414628a91f4ba}{stop\+Preview}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera)
+\begin{DoxyCompactList}\small\item\em Stop preview. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_a6a18126bfaa8cb8201817f4882d1aa1d}{set\+Auto\+Exposure}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Set the exposure mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_ada4560a5518a67e3c621cdefb4387290}{set\+Absolute\+Exposure}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, uint32\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Set the exposure time Manually. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_a294c22d8841eea04dcd9a906cab9e6d4}{set\+Auto\+I\+S\+O\+Sensitive}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Set the gain mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_af6772ec6ede2f677d010110c5a816a83}{set\+I\+S\+O\+Sensitivity}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, int iso\+\_\+sense)
+\begin{DoxyCompactList}\small\item\em Set the exposure time Manually. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_ab11ad5a5fec036451e88f4f23dbc1f16}{set\+Auto\+White\+Balance}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Set white balance mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_a8eb9dac524b4d55be9b908d9dd441d48}{set\+Auto\+White\+Balance\+Mode}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, \mbox{\hyperlink{Arducam_8h_a643d0ad26131376e247aab82485e0095}{C\+A\+M\+\_\+\+W\+H\+I\+T\+E\+\_\+\+B\+A\+L\+A\+N\+CE}} mode)
+\begin{DoxyCompactList}\small\item\em Set the white balance mode Manually. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_a3881f35aaa967bd603fb37b77dabd2b2}{set\+Color\+Effect}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, \mbox{\hyperlink{Arducam_8h_a1396f1daef6526339ee8abe10a55c375}{C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+FX}} effect)
+\begin{DoxyCompactList}\small\item\em Set special effects. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_aa81771289c1c9cd0a920bf459b8dfe44}{set\+Auto\+Focus}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Set auto focus mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_a8124847ddb24c988de3b6fe8b7441fb3}{set\+Saturation}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, \mbox{\hyperlink{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011}{C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+EL}} level)
+\begin{DoxyCompactList}\small\item\em Set saturation level. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_a6c3e8ccf6bc773a48527ae7836d8ec74}{set\+EV}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, \mbox{\hyperlink{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19aff}{C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+EL}} level)
+\begin{DoxyCompactList}\small\item\em Set EV level. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_a9ef34f613cc36d6ae790b205afc2c9da}{set\+Contrast}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, \mbox{\hyperlink{Arducam_8h_a039dba5eae31265427b4829d0db59231}{C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+EL}} level)
+\begin{DoxyCompactList}\small\item\em Set Contrast level. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_abb620c825fbbc7588830f6b1d21a3728}{set\+Brightness}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, \mbox{\hyperlink{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71}{C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+EL}} level)
+\begin{DoxyCompactList}\small\item\em Set Brightness level. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} \mbox{\hyperlink{Arducam_8h_a77e47dca0e36596a322c8d2e429f3c3e}{set\+Sharpness}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, \mbox{\hyperlink{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7}{C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+EL}} level)
+\begin{DoxyCompactList}\small\item\em Set Sharpness level. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{Arducam_8h_a0ae513a93d67a1d10ba242b25ce12c5e}{read\+Buff}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, uint8\+\_\+t $\ast$buff, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Read image data with specified length to buffer. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{Arducam_8h_aaed9f105d4647e4e61e65672a601d4ae}{read\+Byte}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera)
+\begin{DoxyCompactList}\small\item\em Read a byte from F\+I\+FO. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Arducam_8h_a5055aa3e4cae6192acd2a790bed9a74b}{debug\+Write\+Register}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, uint8\+\_\+t $\ast$buff)
+\begin{DoxyCompactList}\small\item\em Debug mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Arducam_8h_ac39259466f50b795261fd81082c9db4c}{register\+Callback}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera, \mbox{\hyperlink{Arducam_8h_a81b801c80862c07bcbe65126db52164c}{B\+U\+F\+F\+E\+R\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} function, uint8\+\_\+t block\+Size)
+\begin{DoxyCompactList}\small\item\em Create callback function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Arducam_8h_a75a500a4f397c2a4024995404f0c4bb7}{low\+Power\+On}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera)
+\begin{DoxyCompactList}\small\item\em Turn on low power mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Arducam_8h_a41c4d1ac086eda32a95bd3d64568dd73}{low\+Power\+Off}} (\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$camera)
+\begin{DoxyCompactList}\small\item\em Turn off low power mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+\mbox{\hyperlink{classArducam}{Arducam}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2021/12/6 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+V1.\+0 
+\end{DoxyVersion}
+\begin{DoxyCopyright}{Copyright}
+\mbox{\hyperlink{classArducam}{Arducam}} 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{Arducam_8h_a81b801c80862c07bcbe65126db52164c}\label{Arducam_8h_a81b801c80862c07bcbe65126db52164c}} 
+\index{Arducam.h@{Arducam.h}!BUFFER\_CALLBACK@{BUFFER\_CALLBACK}}
+\index{BUFFER\_CALLBACK@{BUFFER\_CALLBACK}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{BUFFER\_CALLBACK}{BUFFER\_CALLBACK}}
+{\footnotesize\ttfamily typedef uint8\+\_\+t($\ast$ B\+U\+F\+F\+E\+R\+\_\+\+C\+A\+L\+L\+B\+A\+CK) (uint8\+\_\+t $\ast$buffer, uint8\+\_\+t lenght)}
+
+Callback function prototype ~\newline
+ 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71}\label{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71}} 
+\index{Arducam.h@{Arducam.h}!CAM\_BRIGHTNESS\_LEVEL@{CAM\_BRIGHTNESS\_LEVEL}}
+\index{CAM\_BRIGHTNESS\_LEVEL@{CAM\_BRIGHTNESS\_LEVEL}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{CAM\_BRIGHTNESS\_LEVEL}{CAM\_BRIGHTNESS\_LEVEL}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71}{C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+EL}}}
+
+
+
+Configure camera brightness level. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_BRIGHTNESS\_LEVEL\_MINUS\_4@{CAM\_BRIGHTNESS\_LEVEL\_MINUS\_4}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_BRIGHTNESS\_LEVEL\_MINUS\_4@{CAM\_BRIGHTNESS\_LEVEL\_MINUS\_4}}}\mbox{\Hypertarget{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a0ced35cd858431788a18d11305942b2b}\label{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a0ced35cd858431788a18d11305942b2b}} 
+C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+4&Level -\/4 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_BRIGHTNESS\_LEVEL\_MINUS\_3@{CAM\_BRIGHTNESS\_LEVEL\_MINUS\_3}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_BRIGHTNESS\_LEVEL\_MINUS\_3@{CAM\_BRIGHTNESS\_LEVEL\_MINUS\_3}}}\mbox{\Hypertarget{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a24a5961269a5957ec20c130ae1d08273}\label{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a24a5961269a5957ec20c130ae1d08273}} 
+C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+3&Level -\/3 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_BRIGHTNESS\_LEVEL\_MINUS\_2@{CAM\_BRIGHTNESS\_LEVEL\_MINUS\_2}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_BRIGHTNESS\_LEVEL\_MINUS\_2@{CAM\_BRIGHTNESS\_LEVEL\_MINUS\_2}}}\mbox{\Hypertarget{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71aa38090974c30465438adab560a012a9c}\label{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71aa38090974c30465438adab560a012a9c}} 
+C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+2&Level -\/2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_BRIGHTNESS\_LEVEL\_MINUS\_1@{CAM\_BRIGHTNESS\_LEVEL\_MINUS\_1}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_BRIGHTNESS\_LEVEL\_MINUS\_1@{CAM\_BRIGHTNESS\_LEVEL\_MINUS\_1}}}\mbox{\Hypertarget{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a98c74b297dc8fb5d62ff570c3b494a99}\label{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a98c74b297dc8fb5d62ff570c3b494a99}} 
+C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+1&Level -\/1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_BRIGHTNESS\_LEVEL\_DEFAULT@{CAM\_BRIGHTNESS\_LEVEL\_DEFAULT}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_BRIGHTNESS\_LEVEL\_DEFAULT@{CAM\_BRIGHTNESS\_LEVEL\_DEFAULT}}}\mbox{\Hypertarget{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a0aa2a4f98eb36a1ff46031213aa69dbf}\label{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a0aa2a4f98eb36a1ff46031213aa69dbf}} 
+C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+F\+A\+U\+LT&Level Default \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_BRIGHTNESS\_LEVEL\_1@{CAM\_BRIGHTNESS\_LEVEL\_1}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_BRIGHTNESS\_LEVEL\_1@{CAM\_BRIGHTNESS\_LEVEL\_1}}}\mbox{\Hypertarget{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a1acca8ec51ab8406ec2861df57a3be2e}\label{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a1acca8ec51ab8406ec2861df57a3be2e}} 
+C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+1&Level +1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_BRIGHTNESS\_LEVEL\_2@{CAM\_BRIGHTNESS\_LEVEL\_2}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_BRIGHTNESS\_LEVEL\_2@{CAM\_BRIGHTNESS\_LEVEL\_2}}}\mbox{\Hypertarget{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71ae37e08e5e5ffcda7d38d4bf9af87f1d9}\label{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71ae37e08e5e5ffcda7d38d4bf9af87f1d9}} 
+C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+2&Level +2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_BRIGHTNESS\_LEVEL\_3@{CAM\_BRIGHTNESS\_LEVEL\_3}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_BRIGHTNESS\_LEVEL\_3@{CAM\_BRIGHTNESS\_LEVEL\_3}}}\mbox{\Hypertarget{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a25b6b6f8e0f0e29bf6466114509d3e2e}\label{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a25b6b6f8e0f0e29bf6466114509d3e2e}} 
+C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+3&Level +3 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_BRIGHTNESS\_LEVEL\_4@{CAM\_BRIGHTNESS\_LEVEL\_4}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_BRIGHTNESS\_LEVEL\_4@{CAM\_BRIGHTNESS\_LEVEL\_4}}}\mbox{\Hypertarget{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a166e43e536a1b7684bf5ddc47e45885c}\label{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71a166e43e536a1b7684bf5ddc47e45885c}} 
+C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+4&Level +4 \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{Arducam_8h_a1396f1daef6526339ee8abe10a55c375}\label{Arducam_8h_a1396f1daef6526339ee8abe10a55c375}} 
+\index{Arducam.h@{Arducam.h}!CAM\_COLOR\_FX@{CAM\_COLOR\_FX}}
+\index{CAM\_COLOR\_FX@{CAM\_COLOR\_FX}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{CAM\_COLOR\_FX}{CAM\_COLOR\_FX}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{Arducam_8h_a1396f1daef6526339ee8abe10a55c375}{C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+FX}}}
+
+
+
+Configure special effects. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_COLOR\_FX\_NONE@{CAM\_COLOR\_FX\_NONE}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_COLOR\_FX\_NONE@{CAM\_COLOR\_FX\_NONE}}}\mbox{\Hypertarget{Arducam_8h_a1396f1daef6526339ee8abe10a55c375aa49d8377e2747f77e4bf613c850194ed}\label{Arducam_8h_a1396f1daef6526339ee8abe10a55c375aa49d8377e2747f77e4bf613c850194ed}} 
+C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+N\+O\+NE&no effect ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_COLOR\_FX\_BLUEISH@{CAM\_COLOR\_FX\_BLUEISH}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_COLOR\_FX\_BLUEISH@{CAM\_COLOR\_FX\_BLUEISH}}}\mbox{\Hypertarget{Arducam_8h_a1396f1daef6526339ee8abe10a55c375a11048290f31c05cbdb76f4b34a16d351}\label{Arducam_8h_a1396f1daef6526339ee8abe10a55c375a11048290f31c05cbdb76f4b34a16d351}} 
+C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+B\+L\+U\+E\+I\+SH&cool light ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_COLOR\_FX\_REDISH@{CAM\_COLOR\_FX\_REDISH}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_COLOR\_FX\_REDISH@{CAM\_COLOR\_FX\_REDISH}}}\mbox{\Hypertarget{Arducam_8h_a1396f1daef6526339ee8abe10a55c375a69103867116a636e85511892cc61104f}\label{Arducam_8h_a1396f1daef6526339ee8abe10a55c375a69103867116a636e85511892cc61104f}} 
+C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+R\+E\+D\+I\+SH&warm ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_COLOR\_FX\_BW@{CAM\_COLOR\_FX\_BW}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_COLOR\_FX\_BW@{CAM\_COLOR\_FX\_BW}}}\mbox{\Hypertarget{Arducam_8h_a1396f1daef6526339ee8abe10a55c375abc189051b7ce7f3db2d97027064c22fd}\label{Arducam_8h_a1396f1daef6526339ee8abe10a55c375abc189051b7ce7f3db2d97027064c22fd}} 
+C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+BW&Black/white ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_COLOR\_FX\_SEPIA@{CAM\_COLOR\_FX\_SEPIA}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_COLOR\_FX\_SEPIA@{CAM\_COLOR\_FX\_SEPIA}}}\mbox{\Hypertarget{Arducam_8h_a1396f1daef6526339ee8abe10a55c375a62e9c1cde01042a1a1301d4b203a4295}\label{Arducam_8h_a1396f1daef6526339ee8abe10a55c375a62e9c1cde01042a1a1301d4b203a4295}} 
+C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+S\+E\+P\+IA&Sepia ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_COLOR\_FX\_NEGATIVE@{CAM\_COLOR\_FX\_NEGATIVE}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_COLOR\_FX\_NEGATIVE@{CAM\_COLOR\_FX\_NEGATIVE}}}\mbox{\Hypertarget{Arducam_8h_a1396f1daef6526339ee8abe10a55c375aa44e99955a02f7b181fa01b1f606cf05}\label{Arducam_8h_a1396f1daef6526339ee8abe10a55c375aa44e99955a02f7b181fa01b1f606cf05}} 
+C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+N\+E\+G\+A\+T\+I\+VE&positive/negative inversion ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_COLOR\_FX\_GRASS\_GREEN@{CAM\_COLOR\_FX\_GRASS\_GREEN}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_COLOR\_FX\_GRASS\_GREEN@{CAM\_COLOR\_FX\_GRASS\_GREEN}}}\mbox{\Hypertarget{Arducam_8h_a1396f1daef6526339ee8abe10a55c375a7051f683fb111209375716eee162ba3b}\label{Arducam_8h_a1396f1daef6526339ee8abe10a55c375a7051f683fb111209375716eee162ba3b}} 
+C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+G\+R\+A\+S\+S\+\_\+\+G\+R\+E\+EN&Grass green \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_COLOR\_FX\_OVER\_EXPOSURE@{CAM\_COLOR\_FX\_OVER\_EXPOSURE}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_COLOR\_FX\_OVER\_EXPOSURE@{CAM\_COLOR\_FX\_OVER\_EXPOSURE}}}\mbox{\Hypertarget{Arducam_8h_a1396f1daef6526339ee8abe10a55c375a965a6a727e8960b91144dc036e44506a}\label{Arducam_8h_a1396f1daef6526339ee8abe10a55c375a965a6a727e8960b91144dc036e44506a}} 
+C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+O\+V\+E\+R\+\_\+\+E\+X\+P\+O\+S\+U\+RE&Over exposure \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_COLOR\_FX\_SOLARIZE@{CAM\_COLOR\_FX\_SOLARIZE}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_COLOR\_FX\_SOLARIZE@{CAM\_COLOR\_FX\_SOLARIZE}}}\mbox{\Hypertarget{Arducam_8h_a1396f1daef6526339ee8abe10a55c375ac9ec846d3dab758529de003a1a9244d8}\label{Arducam_8h_a1396f1daef6526339ee8abe10a55c375ac9ec846d3dab758529de003a1a9244d8}} 
+C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+F\+X\+\_\+\+S\+O\+L\+A\+R\+I\+ZE&Solarize ~\newline
+ \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{Arducam_8h_a039dba5eae31265427b4829d0db59231}\label{Arducam_8h_a039dba5eae31265427b4829d0db59231}} 
+\index{Arducam.h@{Arducam.h}!CAM\_CONTRAST\_LEVEL@{CAM\_CONTRAST\_LEVEL}}
+\index{CAM\_CONTRAST\_LEVEL@{CAM\_CONTRAST\_LEVEL}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{CAM\_CONTRAST\_LEVEL}{CAM\_CONTRAST\_LEVEL}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{Arducam_8h_a039dba5eae31265427b4829d0db59231}{C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+EL}}}
+
+
+
+Configure camera contrast level. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_CONTRAST\_LEVEL\_MINUS\_3@{CAM\_CONTRAST\_LEVEL\_MINUS\_3}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_CONTRAST\_LEVEL\_MINUS\_3@{CAM\_CONTRAST\_LEVEL\_MINUS\_3}}}\mbox{\Hypertarget{Arducam_8h_a039dba5eae31265427b4829d0db59231a9b033b978300e447a7e121ceb56c8fe5}\label{Arducam_8h_a039dba5eae31265427b4829d0db59231a9b033b978300e447a7e121ceb56c8fe5}} 
+C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+3&Level -\/3 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_CONTRAST\_LEVEL\_MINUS\_2@{CAM\_CONTRAST\_LEVEL\_MINUS\_2}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_CONTRAST\_LEVEL\_MINUS\_2@{CAM\_CONTRAST\_LEVEL\_MINUS\_2}}}\mbox{\Hypertarget{Arducam_8h_a039dba5eae31265427b4829d0db59231ad13726f2dfe529fe673b5902ffc9ac9a}\label{Arducam_8h_a039dba5eae31265427b4829d0db59231ad13726f2dfe529fe673b5902ffc9ac9a}} 
+C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+2&Level -\/2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_CONTRAST\_LEVEL\_MINUS\_1@{CAM\_CONTRAST\_LEVEL\_MINUS\_1}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_CONTRAST\_LEVEL\_MINUS\_1@{CAM\_CONTRAST\_LEVEL\_MINUS\_1}}}\mbox{\Hypertarget{Arducam_8h_a039dba5eae31265427b4829d0db59231a3886a3200df9f8f761bb1fa2cc7b3a13}\label{Arducam_8h_a039dba5eae31265427b4829d0db59231a3886a3200df9f8f761bb1fa2cc7b3a13}} 
+C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+1&Level -\/1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_CONTRAST\_LEVEL\_DEFAULT@{CAM\_CONTRAST\_LEVEL\_DEFAULT}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_CONTRAST\_LEVEL\_DEFAULT@{CAM\_CONTRAST\_LEVEL\_DEFAULT}}}\mbox{\Hypertarget{Arducam_8h_a039dba5eae31265427b4829d0db59231ab46683fb5e0b681da8d34fb95d39c07c}\label{Arducam_8h_a039dba5eae31265427b4829d0db59231ab46683fb5e0b681da8d34fb95d39c07c}} 
+C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+F\+A\+U\+LT&Level Default \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_CONTRAST\_LEVEL\_1@{CAM\_CONTRAST\_LEVEL\_1}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_CONTRAST\_LEVEL\_1@{CAM\_CONTRAST\_LEVEL\_1}}}\mbox{\Hypertarget{Arducam_8h_a039dba5eae31265427b4829d0db59231aac51725ee26af7d2bc2581254b8d2aec}\label{Arducam_8h_a039dba5eae31265427b4829d0db59231aac51725ee26af7d2bc2581254b8d2aec}} 
+C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+1&Level +1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_CONTRAST\_LEVEL\_2@{CAM\_CONTRAST\_LEVEL\_2}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_CONTRAST\_LEVEL\_2@{CAM\_CONTRAST\_LEVEL\_2}}}\mbox{\Hypertarget{Arducam_8h_a039dba5eae31265427b4829d0db59231a617219ff57ab254702c5485762ba9eee}\label{Arducam_8h_a039dba5eae31265427b4829d0db59231a617219ff57ab254702c5485762ba9eee}} 
+C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+2&Level +2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_CONTRAST\_LEVEL\_3@{CAM\_CONTRAST\_LEVEL\_3}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_CONTRAST\_LEVEL\_3@{CAM\_CONTRAST\_LEVEL\_3}}}\mbox{\Hypertarget{Arducam_8h_a039dba5eae31265427b4829d0db59231a418a4649ee36450b711a34f38605303d}\label{Arducam_8h_a039dba5eae31265427b4829d0db59231a418a4649ee36450b711a34f38605303d}} 
+C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+3&Level +3 \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19aff}\label{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19aff}} 
+\index{Arducam.h@{Arducam.h}!CAM\_EV\_LEVEL@{CAM\_EV\_LEVEL}}
+\index{CAM\_EV\_LEVEL@{CAM\_EV\_LEVEL}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{CAM\_EV\_LEVEL}{CAM\_EV\_LEVEL}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19aff}{C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+EL}}}
+
+
+
+Configure camera EV level. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_EV\_LEVEL\_MINUS\_3@{CAM\_EV\_LEVEL\_MINUS\_3}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_EV\_LEVEL\_MINUS\_3@{CAM\_EV\_LEVEL\_MINUS\_3}}}\mbox{\Hypertarget{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affacfb9c23415a7a622d739a294396e9aa5}\label{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affacfb9c23415a7a622d739a294396e9aa5}} 
+C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+3&Level -\/3 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_EV\_LEVEL\_MINUS\_2@{CAM\_EV\_LEVEL\_MINUS\_2}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_EV\_LEVEL\_MINUS\_2@{CAM\_EV\_LEVEL\_MINUS\_2}}}\mbox{\Hypertarget{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affa2eb5f0d1f02c82b42b49291d3ed8a7d6}\label{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affa2eb5f0d1f02c82b42b49291d3ed8a7d6}} 
+C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+2&Level -\/2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_EV\_LEVEL\_MINUS\_1@{CAM\_EV\_LEVEL\_MINUS\_1}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_EV\_LEVEL\_MINUS\_1@{CAM\_EV\_LEVEL\_MINUS\_1}}}\mbox{\Hypertarget{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affaf17f251b5ab3d1f6fea9971614135211}\label{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affaf17f251b5ab3d1f6fea9971614135211}} 
+C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+1&Level -\/1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_EV\_LEVEL\_DEFAULT@{CAM\_EV\_LEVEL\_DEFAULT}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_EV\_LEVEL\_DEFAULT@{CAM\_EV\_LEVEL\_DEFAULT}}}\mbox{\Hypertarget{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affa589e2e4864f518630aab919b36f3a8f6}\label{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affa589e2e4864f518630aab919b36f3a8f6}} 
+C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+F\+A\+U\+LT&Level Default \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_EV\_LEVEL\_1@{CAM\_EV\_LEVEL\_1}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_EV\_LEVEL\_1@{CAM\_EV\_LEVEL\_1}}}\mbox{\Hypertarget{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affa30bffff8f7c413498cdfca7c69d52d0d}\label{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affa30bffff8f7c413498cdfca7c69d52d0d}} 
+C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+E\+L\+\_\+1&Level +1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_EV\_LEVEL\_2@{CAM\_EV\_LEVEL\_2}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_EV\_LEVEL\_2@{CAM\_EV\_LEVEL\_2}}}\mbox{\Hypertarget{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affa961fd26f93b132487d6c4730bb9816ca}\label{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affa961fd26f93b132487d6c4730bb9816ca}} 
+C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+E\+L\+\_\+2&Level +2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_EV\_LEVEL\_3@{CAM\_EV\_LEVEL\_3}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_EV\_LEVEL\_3@{CAM\_EV\_LEVEL\_3}}}\mbox{\Hypertarget{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affa637dd6bf4e0512ad42736de67de2d35f}\label{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19affa637dd6bf4e0512ad42736de67de2d35f}} 
+C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+E\+L\+\_\+3&Level +3 \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{Arducam_8h_aad9c52a28f327c5d815f76befe687015}\label{Arducam_8h_aad9c52a28f327c5d815f76befe687015}} 
+\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_MODE@{CAM\_IMAGE\_MODE}}
+\index{CAM\_IMAGE\_MODE@{CAM\_IMAGE\_MODE}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{CAM\_IMAGE\_MODE}{CAM\_IMAGE\_MODE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+DE}}}
+
+
+
+Configure camera resolution. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_IMAGE\_MODE\_QQVGA@{CAM\_IMAGE\_MODE\_QQVGA}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_MODE\_QQVGA@{CAM\_IMAGE\_MODE\_QQVGA}}}\mbox{\Hypertarget{Arducam_8h_aad9c52a28f327c5d815f76befe687015a03362277ce6d8880e21b186451001f3a}\label{Arducam_8h_aad9c52a28f327c5d815f76befe687015a03362277ce6d8880e21b186451001f3a}} 
+C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+Q\+Q\+V\+GA&160x120 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_IMAGE\_MODE\_QVGA@{CAM\_IMAGE\_MODE\_QVGA}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_MODE\_QVGA@{CAM\_IMAGE\_MODE\_QVGA}}}\mbox{\Hypertarget{Arducam_8h_aad9c52a28f327c5d815f76befe687015a7491cfab5664b60bfafa41bf26e59a5f}\label{Arducam_8h_aad9c52a28f327c5d815f76befe687015a7491cfab5664b60bfafa41bf26e59a5f}} 
+C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+Q\+V\+GA&320x240 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_IMAGE\_MODE\_VGA@{CAM\_IMAGE\_MODE\_VGA}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_MODE\_VGA@{CAM\_IMAGE\_MODE\_VGA}}}\mbox{\Hypertarget{Arducam_8h_aad9c52a28f327c5d815f76befe687015a43e66f40b7746cfa3626595dfafe1315}\label{Arducam_8h_aad9c52a28f327c5d815f76befe687015a43e66f40b7746cfa3626595dfafe1315}} 
+C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+V\+GA&640x480 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_IMAGE\_MODE\_SVGA@{CAM\_IMAGE\_MODE\_SVGA}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_MODE\_SVGA@{CAM\_IMAGE\_MODE\_SVGA}}}\mbox{\Hypertarget{Arducam_8h_aad9c52a28f327c5d815f76befe687015a3c4e48a704ef557d74fb651d4443f105}\label{Arducam_8h_aad9c52a28f327c5d815f76befe687015a3c4e48a704ef557d74fb651d4443f105}} 
+C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+S\+V\+GA&800x600 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_IMAGE\_MODE\_HD@{CAM\_IMAGE\_MODE\_HD}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_MODE\_HD@{CAM\_IMAGE\_MODE\_HD}}}\mbox{\Hypertarget{Arducam_8h_aad9c52a28f327c5d815f76befe687015a02b5580d07deb175b21529743e43497a}\label{Arducam_8h_aad9c52a28f327c5d815f76befe687015a02b5580d07deb175b21529743e43497a}} 
+C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+HD&1280x720 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_IMAGE\_MODE\_SXGAM@{CAM\_IMAGE\_MODE\_SXGAM}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_MODE\_SXGAM@{CAM\_IMAGE\_MODE\_SXGAM}}}\mbox{\Hypertarget{Arducam_8h_aad9c52a28f327c5d815f76befe687015a305826f88a7e28698f8dafc3e76f4ca8}\label{Arducam_8h_aad9c52a28f327c5d815f76befe687015a305826f88a7e28698f8dafc3e76f4ca8}} 
+C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+S\+X\+G\+AM&1280x960 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_IMAGE\_MODE\_UXGA@{CAM\_IMAGE\_MODE\_UXGA}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_MODE\_UXGA@{CAM\_IMAGE\_MODE\_UXGA}}}\mbox{\Hypertarget{Arducam_8h_aad9c52a28f327c5d815f76befe687015a96ff299d23aa8d61a7991669ddffed63}\label{Arducam_8h_aad9c52a28f327c5d815f76befe687015a96ff299d23aa8d61a7991669ddffed63}} 
+C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+U\+X\+GA&1600x1200 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_IMAGE\_MODE\_FHD@{CAM\_IMAGE\_MODE\_FHD}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_MODE\_FHD@{CAM\_IMAGE\_MODE\_FHD}}}\mbox{\Hypertarget{Arducam_8h_aad9c52a28f327c5d815f76befe687015a673bccb9bab53474c4cac256a18b7290}\label{Arducam_8h_aad9c52a28f327c5d815f76befe687015a673bccb9bab53474c4cac256a18b7290}} 
+C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+F\+HD&1920x1080 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_IMAGE\_MODE\_QXGA@{CAM\_IMAGE\_MODE\_QXGA}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_MODE\_QXGA@{CAM\_IMAGE\_MODE\_QXGA}}}\mbox{\Hypertarget{Arducam_8h_aad9c52a28f327c5d815f76befe687015a5aada59aa0f3d06c022c9674da6f31a0}\label{Arducam_8h_aad9c52a28f327c5d815f76befe687015a5aada59aa0f3d06c022c9674da6f31a0}} 
+C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+Q\+X\+GA&2048x1536 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_IMAGE\_MODE\_WQXGA2@{CAM\_IMAGE\_MODE\_WQXGA2}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_MODE\_WQXGA2@{CAM\_IMAGE\_MODE\_WQXGA2}}}\mbox{\Hypertarget{Arducam_8h_aad9c52a28f327c5d815f76befe687015ad2563a3923a421d35d64192ad7e09b85}\label{Arducam_8h_aad9c52a28f327c5d815f76befe687015ad2563a3923a421d35d64192ad7e09b85}} 
+C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+\+W\+Q\+X\+G\+A2&2592x1944 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_IMAGE\_MODE\_9@{CAM\_IMAGE\_MODE\_9}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_MODE\_9@{CAM\_IMAGE\_MODE\_9}}}\mbox{\Hypertarget{Arducam_8h_aad9c52a28f327c5d815f76befe687015a2fab80f52b895343f22dc423f9acb687}\label{Arducam_8h_aad9c52a28f327c5d815f76befe687015a2fab80f52b895343f22dc423f9acb687}} 
+C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+D\+E\+\_\+9&Reserve \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{Arducam_8h_ae9748ceecc6f11421cb46fc489606338}\label{Arducam_8h_ae9748ceecc6f11421cb46fc489606338}} 
+\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_PIX\_FMT@{CAM\_IMAGE\_PIX\_FMT}}
+\index{CAM\_IMAGE\_PIX\_FMT@{CAM\_IMAGE\_PIX\_FMT}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{CAM\_IMAGE\_PIX\_FMT}{CAM\_IMAGE\_PIX\_FMT}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{Arducam_8h_ae9748ceecc6f11421cb46fc489606338}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+P\+I\+X\+\_\+\+F\+MT}}}
+
+
+
+Configure image pixel format. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_IMAGE\_PIX\_FMT\_RGB565@{CAM\_IMAGE\_PIX\_FMT\_RGB565}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_PIX\_FMT\_RGB565@{CAM\_IMAGE\_PIX\_FMT\_RGB565}}}\mbox{\Hypertarget{Arducam_8h_ae9748ceecc6f11421cb46fc489606338ad6a378f425b18247bc2adce64fa3af9a}\label{Arducam_8h_ae9748ceecc6f11421cb46fc489606338ad6a378f425b18247bc2adce64fa3af9a}} 
+C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+R\+G\+B565&R\+G\+B565 format \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_IMAGE\_PIX\_FMT\_JPG@{CAM\_IMAGE\_PIX\_FMT\_JPG}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_PIX\_FMT\_JPG@{CAM\_IMAGE\_PIX\_FMT\_JPG}}}\mbox{\Hypertarget{Arducam_8h_ae9748ceecc6f11421cb46fc489606338a8a7afaef9a95f8d85c7147481f395f36}\label{Arducam_8h_ae9748ceecc6f11421cb46fc489606338a8a7afaef9a95f8d85c7147481f395f36}} 
+C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+J\+PG&J\+P\+EG format \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_IMAGE\_PIX\_FMT\_YUV@{CAM\_IMAGE\_PIX\_FMT\_YUV}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_PIX\_FMT\_YUV@{CAM\_IMAGE\_PIX\_FMT\_YUV}}}\mbox{\Hypertarget{Arducam_8h_ae9748ceecc6f11421cb46fc489606338ab3e1c0bf1206a328aa95779d868024a2}\label{Arducam_8h_ae9748ceecc6f11421cb46fc489606338ab3e1c0bf1206a328aa95779d868024a2}} 
+C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+Y\+UV&Y\+UV format \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_IMAGE\_PIX\_FMT\_NONE@{CAM\_IMAGE\_PIX\_FMT\_NONE}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_IMAGE\_PIX\_FMT\_NONE@{CAM\_IMAGE\_PIX\_FMT\_NONE}}}\mbox{\Hypertarget{Arducam_8h_ae9748ceecc6f11421cb46fc489606338ad29ea6bdf677352692fedfaeec0ee750}\label{Arducam_8h_ae9748ceecc6f11421cb46fc489606338ad29ea6bdf677352692fedfaeec0ee750}} 
+C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+P\+I\+X\+\_\+\+F\+M\+T\+\_\+\+N\+O\+NE&No defined format \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7}\label{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7}} 
+\index{Arducam.h@{Arducam.h}!CAM\_SHARPNESS\_LEVEL@{CAM\_SHARPNESS\_LEVEL}}
+\index{CAM\_SHARPNESS\_LEVEL@{CAM\_SHARPNESS\_LEVEL}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{CAM\_SHARPNESS\_LEVEL}{CAM\_SHARPNESS\_LEVEL}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7}{C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+EL}}}
+
+
+
+Configure camera Sharpness level. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_SHARPNESS\_LEVEL\_AUTO@{CAM\_SHARPNESS\_LEVEL\_AUTO}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_SHARPNESS\_LEVEL\_AUTO@{CAM\_SHARPNESS\_LEVEL\_AUTO}}}\mbox{\Hypertarget{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a56078d8749e436aac4f2c2ef92597ab1}\label{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a56078d8749e436aac4f2c2ef92597ab1}} 
+C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+\+A\+U\+TO&Sharpness Auto \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_SHARPNESS\_LEVEL\_1@{CAM\_SHARPNESS\_LEVEL\_1}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_SHARPNESS\_LEVEL\_1@{CAM\_SHARPNESS\_LEVEL\_1}}}\mbox{\Hypertarget{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7aae9e8ea1af173d3418582874765cda8d}\label{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7aae9e8ea1af173d3418582874765cda8d}} 
+C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+1&Sharpness Level 1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_SHARPNESS\_LEVEL\_2@{CAM\_SHARPNESS\_LEVEL\_2}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_SHARPNESS\_LEVEL\_2@{CAM\_SHARPNESS\_LEVEL\_2}}}\mbox{\Hypertarget{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7abe8405599dc09f7210f025b922a9134c}\label{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7abe8405599dc09f7210f025b922a9134c}} 
+C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+2&Sharpness Level 2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_SHARPNESS\_LEVEL\_3@{CAM\_SHARPNESS\_LEVEL\_3}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_SHARPNESS\_LEVEL\_3@{CAM\_SHARPNESS\_LEVEL\_3}}}\mbox{\Hypertarget{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7aa6751398f8b32bb16bd83457e4f7e11a}\label{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7aa6751398f8b32bb16bd83457e4f7e11a}} 
+C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+3&Sharpness Level 3 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_SHARPNESS\_LEVEL\_4@{CAM\_SHARPNESS\_LEVEL\_4}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_SHARPNESS\_LEVEL\_4@{CAM\_SHARPNESS\_LEVEL\_4}}}\mbox{\Hypertarget{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a770607f4263a3e91f9c7e95dd1462f81}\label{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a770607f4263a3e91f9c7e95dd1462f81}} 
+C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+4&Sharpness Level 4 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_SHARPNESS\_LEVEL\_5@{CAM\_SHARPNESS\_LEVEL\_5}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_SHARPNESS\_LEVEL\_5@{CAM\_SHARPNESS\_LEVEL\_5}}}\mbox{\Hypertarget{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a1075693be8bcef3d585a897294599311}\label{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a1075693be8bcef3d585a897294599311}} 
+C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+5&Sharpness Level 5 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_SHARPNESS\_LEVEL\_6@{CAM\_SHARPNESS\_LEVEL\_6}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_SHARPNESS\_LEVEL\_6@{CAM\_SHARPNESS\_LEVEL\_6}}}\mbox{\Hypertarget{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a6414026ceddb166ede78020ccdc2c302}\label{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a6414026ceddb166ede78020ccdc2c302}} 
+C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+6&Sharpness Level 6 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_SHARPNESS\_LEVEL\_7@{CAM\_SHARPNESS\_LEVEL\_7}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_SHARPNESS\_LEVEL\_7@{CAM\_SHARPNESS\_LEVEL\_7}}}\mbox{\Hypertarget{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a3997104f0c7c04db4bb400ce61da2404}\label{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a3997104f0c7c04db4bb400ce61da2404}} 
+C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+7&Sharpness Level 7 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_SHARPNESS\_LEVEL\_8@{CAM\_SHARPNESS\_LEVEL\_8}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_SHARPNESS\_LEVEL\_8@{CAM\_SHARPNESS\_LEVEL\_8}}}\mbox{\Hypertarget{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a579c04f9239f7758a46792a8184ea54a}\label{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7a579c04f9239f7758a46792a8184ea54a}} 
+C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+8&Sharpness Level 8 \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011}\label{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011}} 
+\index{Arducam.h@{Arducam.h}!CAM\_STAURATION\_LEVEL@{CAM\_STAURATION\_LEVEL}}
+\index{CAM\_STAURATION\_LEVEL@{CAM\_STAURATION\_LEVEL}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{CAM\_STAURATION\_LEVEL}{CAM\_STAURATION\_LEVEL}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011}{C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+EL}}}
+
+
+
+Configure camera stauration level. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_STAURATION\_LEVEL\_MINUS\_3@{CAM\_STAURATION\_LEVEL\_MINUS\_3}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_STAURATION\_LEVEL\_MINUS\_3@{CAM\_STAURATION\_LEVEL\_MINUS\_3}}}\mbox{\Hypertarget{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a2c0eec87b6c94d97ae43d6aace7ff0a4}\label{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a2c0eec87b6c94d97ae43d6aace7ff0a4}} 
+C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+3&Level -\/3 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_STAURATION\_LEVEL\_MINUS\_2@{CAM\_STAURATION\_LEVEL\_MINUS\_2}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_STAURATION\_LEVEL\_MINUS\_2@{CAM\_STAURATION\_LEVEL\_MINUS\_2}}}\mbox{\Hypertarget{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a918b8e9ec70c2d7d8a35da40987fca03}\label{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a918b8e9ec70c2d7d8a35da40987fca03}} 
+C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+2&Level -\/2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_STAURATION\_LEVEL\_MINUS\_1@{CAM\_STAURATION\_LEVEL\_MINUS\_1}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_STAURATION\_LEVEL\_MINUS\_1@{CAM\_STAURATION\_LEVEL\_MINUS\_1}}}\mbox{\Hypertarget{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a4b9e2b9fd076bea05995eb52e7000717}\label{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a4b9e2b9fd076bea05995eb52e7000717}} 
+C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+1&Level -\/1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_STAURATION\_LEVEL\_DEFAULT@{CAM\_STAURATION\_LEVEL\_DEFAULT}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_STAURATION\_LEVEL\_DEFAULT@{CAM\_STAURATION\_LEVEL\_DEFAULT}}}\mbox{\Hypertarget{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a4d288739e2c439be0b2b29e5c5a76fcf}\label{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a4d288739e2c439be0b2b29e5c5a76fcf}} 
+C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+F\+A\+U\+LT&Level Default \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_STAURATION\_LEVEL\_1@{CAM\_STAURATION\_LEVEL\_1}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_STAURATION\_LEVEL\_1@{CAM\_STAURATION\_LEVEL\_1}}}\mbox{\Hypertarget{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a9e9df1bdbdadd8a702eaabc27f22ed29}\label{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a9e9df1bdbdadd8a702eaabc27f22ed29}} 
+C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+E\+L\+\_\+1&Level +1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_STAURATION\_LEVEL\_2@{CAM\_STAURATION\_LEVEL\_2}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_STAURATION\_LEVEL\_2@{CAM\_STAURATION\_LEVEL\_2}}}\mbox{\Hypertarget{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011aa098dd653991912bd28f79ba0df104dc}\label{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011aa098dd653991912bd28f79ba0df104dc}} 
+C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+E\+L\+\_\+2&Level +2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_STAURATION\_LEVEL\_3@{CAM\_STAURATION\_LEVEL\_3}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_STAURATION\_LEVEL\_3@{CAM\_STAURATION\_LEVEL\_3}}}\mbox{\Hypertarget{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a76771f32c32c75a197367efac57e9768}\label{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011a76771f32c32c75a197367efac57e9768}} 
+C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+E\+L\+\_\+3&Level +3 \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{Arducam_8h_a79f9eea25f8ca9df7e0773ab408baed7}\label{Arducam_8h_a79f9eea25f8ca9df7e0773ab408baed7}} 
+\index{Arducam.h@{Arducam.h}!CAM\_VIDEO\_MODE@{CAM\_VIDEO\_MODE}}
+\index{CAM\_VIDEO\_MODE@{CAM\_VIDEO\_MODE}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{CAM\_VIDEO\_MODE}{CAM\_VIDEO\_MODE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{Arducam_8h_a79f9eea25f8ca9df7e0773ab408baed7}{C\+A\+M\+\_\+\+V\+I\+D\+E\+O\+\_\+\+M\+O\+DE}}}
+
+
+
+Configure resolution in video streaming mode. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_VIDEO\_MODE\_0@{CAM\_VIDEO\_MODE\_0}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_VIDEO\_MODE\_0@{CAM\_VIDEO\_MODE\_0}}}\mbox{\Hypertarget{Arducam_8h_a79f9eea25f8ca9df7e0773ab408baed7a94446b4b6cb86a83016ed33022a8f09e}\label{Arducam_8h_a79f9eea25f8ca9df7e0773ab408baed7a94446b4b6cb86a83016ed33022a8f09e}} 
+C\+A\+M\+\_\+\+V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+E\+\_\+0&320x240 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_VIDEO\_MODE\_1@{CAM\_VIDEO\_MODE\_1}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_VIDEO\_MODE\_1@{CAM\_VIDEO\_MODE\_1}}}\mbox{\Hypertarget{Arducam_8h_a79f9eea25f8ca9df7e0773ab408baed7a573f34bb7a6e52f8b74da47385f3c550}\label{Arducam_8h_a79f9eea25f8ca9df7e0773ab408baed7a573f34bb7a6e52f8b74da47385f3c550}} 
+C\+A\+M\+\_\+\+V\+I\+D\+E\+O\+\_\+\+M\+O\+D\+E\+\_\+1&640x480 \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{Arducam_8h_a643d0ad26131376e247aab82485e0095}\label{Arducam_8h_a643d0ad26131376e247aab82485e0095}} 
+\index{Arducam.h@{Arducam.h}!CAM\_WHITE\_BALANCE@{CAM\_WHITE\_BALANCE}}
+\index{CAM\_WHITE\_BALANCE@{CAM\_WHITE\_BALANCE}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{CAM\_WHITE\_BALANCE}{CAM\_WHITE\_BALANCE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{Arducam_8h_a643d0ad26131376e247aab82485e0095}{C\+A\+M\+\_\+\+W\+H\+I\+T\+E\+\_\+\+B\+A\+L\+A\+N\+CE}}}
+
+
+
+Configure white balance mode. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_WHITE\_BALANCE\_MODE\_DEFAULT@{CAM\_WHITE\_BALANCE\_MODE\_DEFAULT}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_WHITE\_BALANCE\_MODE\_DEFAULT@{CAM\_WHITE\_BALANCE\_MODE\_DEFAULT}}}\mbox{\Hypertarget{Arducam_8h_a643d0ad26131376e247aab82485e0095ab158e9dcb33756e8036f68502c627cb8}\label{Arducam_8h_a643d0ad26131376e247aab82485e0095ab158e9dcb33756e8036f68502c627cb8}} 
+C\+A\+M\+\_\+\+W\+H\+I\+T\+E\+\_\+\+B\+A\+L\+A\+N\+C\+E\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+F\+A\+U\+LT&Auto \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_WHITE\_BALANCE\_MODE\_SUNNY@{CAM\_WHITE\_BALANCE\_MODE\_SUNNY}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_WHITE\_BALANCE\_MODE\_SUNNY@{CAM\_WHITE\_BALANCE\_MODE\_SUNNY}}}\mbox{\Hypertarget{Arducam_8h_a643d0ad26131376e247aab82485e0095a0066ad0339abd61e6a2878bca5bc4803}\label{Arducam_8h_a643d0ad26131376e247aab82485e0095a0066ad0339abd61e6a2878bca5bc4803}} 
+C\+A\+M\+\_\+\+W\+H\+I\+T\+E\+\_\+\+B\+A\+L\+A\+N\+C\+E\+\_\+\+M\+O\+D\+E\+\_\+\+S\+U\+N\+NY&Sunny \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_WHITE\_BALANCE\_MODE\_OFFICE@{CAM\_WHITE\_BALANCE\_MODE\_OFFICE}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_WHITE\_BALANCE\_MODE\_OFFICE@{CAM\_WHITE\_BALANCE\_MODE\_OFFICE}}}\mbox{\Hypertarget{Arducam_8h_a643d0ad26131376e247aab82485e0095a376561d470ebdb1fbfbc6464d556cbf3}\label{Arducam_8h_a643d0ad26131376e247aab82485e0095a376561d470ebdb1fbfbc6464d556cbf3}} 
+C\+A\+M\+\_\+\+W\+H\+I\+T\+E\+\_\+\+B\+A\+L\+A\+N\+C\+E\+\_\+\+M\+O\+D\+E\+\_\+\+O\+F\+F\+I\+CE&Office \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_WHITE\_BALANCE\_MODE\_CLOUDY@{CAM\_WHITE\_BALANCE\_MODE\_CLOUDY}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_WHITE\_BALANCE\_MODE\_CLOUDY@{CAM\_WHITE\_BALANCE\_MODE\_CLOUDY}}}\mbox{\Hypertarget{Arducam_8h_a643d0ad26131376e247aab82485e0095a774ec5e6f557a2ed4d2a1607917bf42a}\label{Arducam_8h_a643d0ad26131376e247aab82485e0095a774ec5e6f557a2ed4d2a1607917bf42a}} 
+C\+A\+M\+\_\+\+W\+H\+I\+T\+E\+\_\+\+B\+A\+L\+A\+N\+C\+E\+\_\+\+M\+O\+D\+E\+\_\+\+C\+L\+O\+U\+DY&Cloudy \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_WHITE\_BALANCE\_MODE\_HOME@{CAM\_WHITE\_BALANCE\_MODE\_HOME}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_WHITE\_BALANCE\_MODE\_HOME@{CAM\_WHITE\_BALANCE\_MODE\_HOME}}}\mbox{\Hypertarget{Arducam_8h_a643d0ad26131376e247aab82485e0095a587bdf93698d9b3a3d8b7f97304b139e}\label{Arducam_8h_a643d0ad26131376e247aab82485e0095a587bdf93698d9b3a3d8b7f97304b139e}} 
+C\+A\+M\+\_\+\+W\+H\+I\+T\+E\+\_\+\+B\+A\+L\+A\+N\+C\+E\+\_\+\+M\+O\+D\+E\+\_\+\+H\+O\+ME&Home \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}\label{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}} 
+\index{Arducam.h@{Arducam.h}!CamStatus@{CamStatus}}
+\index{CamStatus@{CamStatus}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{CamStatus}{CamStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}}}
+
+
+
+Camera status. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_ERR\_SUCCESS@{CAM\_ERR\_SUCCESS}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_ERR\_SUCCESS@{CAM\_ERR\_SUCCESS}}}\mbox{\Hypertarget{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1ad78fefb3ad26c90b550454e8b8505a1e}\label{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1ad78fefb3ad26c90b550454e8b8505a1e}} 
+C\+A\+M\+\_\+\+E\+R\+R\+\_\+\+S\+U\+C\+C\+E\+SS&Operation succeeded \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAM\_ERR\_NO\_CALLBACK@{CAM\_ERR\_NO\_CALLBACK}!Arducam.h@{Arducam.h}}\index{Arducam.h@{Arducam.h}!CAM\_ERR\_NO\_CALLBACK@{CAM\_ERR\_NO\_CALLBACK}}}\mbox{\Hypertarget{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1a667dfc004f98c4948c41661580a45a28}\label{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1a667dfc004f98c4948c41661580a45a28}} 
+C\+A\+M\+\_\+\+E\+R\+R\+\_\+\+N\+O\+\_\+\+C\+A\+L\+L\+B\+A\+CK&No callback function is registered \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Arducam_8h_abb99665a6210474dbc5485efe40e569c}\label{Arducam_8h_abb99665a6210474dbc5485efe40e569c}} 
+\index{Arducam.h@{Arducam.h}!begin@{begin}}
+\index{begin@{begin}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera }\end{DoxyParamCaption})}
+
+
+
+Initialize the configuration of the camera module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Arducam_8h_ada4a7f048d83ba0fe3a3c01f2588f6dd}\label{Arducam_8h_ada4a7f048d83ba0fe3a3c01f2588f6dd}} 
+\index{Arducam.h@{Arducam.h}!createArducamCamera@{createArducamCamera}}
+\index{createArducamCamera@{createArducamCamera}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{createArducamCamera()}{createArducamCamera()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} create\+Arducam\+Camera (\begin{DoxyParamCaption}\item[{int}]{cs }\end{DoxyParamCaption})}
+
+
+
+Create a camera instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cs} & Chip select signal for S\+PI communication\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return a \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Arducam_8h_a5055aa3e4cae6192acd2a790bed9a74b}\label{Arducam_8h_a5055aa3e4cae6192acd2a790bed9a74b}} 
+\index{Arducam.h@{Arducam.h}!debugWriteRegister@{debugWriteRegister}}
+\index{debugWriteRegister@{debugWriteRegister}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{debugWriteRegister()}{debugWriteRegister()}}
+{\footnotesize\ttfamily void debug\+Write\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{uint8\+\_\+t $\ast$}]{buff }\end{DoxyParamCaption})}
+
+
+
+Debug mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em buff} & There are four bytes of buff Byte 1 indicates the device address, Byte 2 indicates the high octet of the register, Byte 3 indicates the low octet of the register, and Byte 4 indicates the value written to the register \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Arducam_8h_a41c4d1ac086eda32a95bd3d64568dd73}\label{Arducam_8h_a41c4d1ac086eda32a95bd3d64568dd73}} 
+\index{Arducam.h@{Arducam.h}!lowPowerOff@{lowPowerOff}}
+\index{lowPowerOff@{lowPowerOff}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{lowPowerOff()}{lowPowerOff()}}
+{\footnotesize\ttfamily void low\+Power\+Off (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera }\end{DoxyParamCaption})}
+
+
+
+Turn off low power mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Arducam_8h_a75a500a4f397c2a4024995404f0c4bb7}\label{Arducam_8h_a75a500a4f397c2a4024995404f0c4bb7}} 
+\index{Arducam.h@{Arducam.h}!lowPowerOn@{lowPowerOn}}
+\index{lowPowerOn@{lowPowerOn}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{lowPowerOn()}{lowPowerOn()}}
+{\footnotesize\ttfamily void low\+Power\+On (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera }\end{DoxyParamCaption})}
+
+
+
+Turn on low power mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Arducam_8h_a0ae513a93d67a1d10ba242b25ce12c5e}\label{Arducam_8h_a0ae513a93d67a1d10ba242b25ce12c5e}} 
+\index{Arducam.h@{Arducam.h}!readBuff@{readBuff}}
+\index{readBuff@{readBuff}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{readBuff()}{readBuff()}}
+{\footnotesize\ttfamily uint8\+\_\+t read\+Buff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{uint8\+\_\+t $\ast$}]{buff,  }\item[{uint8\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Read image data with specified length to buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em buff} & Buffer for storing camera data \\
+\hline
+{\em length} & The length of the available data to be read\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the length actually read
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Transmission length should be less than {\ttfamily 255} 
+\end{DoxyNote}
+\mbox{\Hypertarget{Arducam_8h_aaed9f105d4647e4e61e65672a601d4ae}\label{Arducam_8h_aaed9f105d4647e4e61e65672a601d4ae}} 
+\index{Arducam.h@{Arducam.h}!readByte@{readByte}}
+\index{readByte@{readByte}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{readByte()}{readByte()}}
+{\footnotesize\ttfamily uint8\+\_\+t read\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera }\end{DoxyParamCaption})}
+
+
+
+Read a byte from F\+I\+FO. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns Camera data
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Before calling this function, make sure that the data is available in the buffer 
+\end{DoxyNote}
+\mbox{\Hypertarget{Arducam_8h_ac39259466f50b795261fd81082c9db4c}\label{Arducam_8h_ac39259466f50b795261fd81082c9db4c}} 
+\index{Arducam.h@{Arducam.h}!registerCallback@{registerCallback}}
+\index{registerCallback@{registerCallback}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{registerCallback()}{registerCallback()}}
+{\footnotesize\ttfamily void register\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{Arducam_8h_a81b801c80862c07bcbe65126db52164c}{B\+U\+F\+F\+E\+R\+\_\+\+C\+A\+L\+L\+B\+A\+CK}}}]{function,  }\item[{uint8\+\_\+t}]{block\+Size }\end{DoxyParamCaption})}
+
+
+
+Create callback function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em function} & Callback function name \\
+\hline
+{\em block\+Size} & The length of the data transmitted by the callback function at one time\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Transmission length should be less than {\ttfamily 255} 
+\end{DoxyNote}
+\mbox{\Hypertarget{Arducam_8h_ada4560a5518a67e3c621cdefb4387290}\label{Arducam_8h_ada4560a5518a67e3c621cdefb4387290}} 
+\index{Arducam.h@{Arducam.h}!setAbsoluteExposure@{setAbsoluteExposure}}
+\index{setAbsoluteExposure@{setAbsoluteExposure}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{setAbsoluteExposure()}{setAbsoluteExposure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} set\+Absolute\+Exposure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{uint32\+\_\+t}]{val }\end{DoxyParamCaption})}
+
+
+
+Set the exposure time Manually. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em val} & Value of exposure line\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Before calling this function, you need to use the \mbox{\hyperlink{Arducam_8h_a6a18126bfaa8cb8201817f4882d1aa1d}{set\+Auto\+Exposure()}} function to turn off the auto exposure function 
+\end{DoxyNote}
+\mbox{\Hypertarget{Arducam_8h_a6a18126bfaa8cb8201817f4882d1aa1d}\label{Arducam_8h_a6a18126bfaa8cb8201817f4882d1aa1d}} 
+\index{Arducam.h@{Arducam.h}!setAutoExposure@{setAutoExposure}}
+\index{setAutoExposure@{setAutoExposure}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{setAutoExposure()}{setAutoExposure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} set\+Auto\+Exposure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{uint8\+\_\+t}]{val }\end{DoxyParamCaption})}
+
+
+
+Set the exposure mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em val} & {\ttfamily 1} Turn on automatic exposure {\ttfamily 0} Turn off automatic exposure\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Arducam_8h_aa81771289c1c9cd0a920bf459b8dfe44}\label{Arducam_8h_aa81771289c1c9cd0a920bf459b8dfe44}} 
+\index{Arducam.h@{Arducam.h}!setAutoFocus@{setAutoFocus}}
+\index{setAutoFocus@{setAutoFocus}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{setAutoFocus()}{setAutoFocus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} set\+Auto\+Focus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{uint8\+\_\+t}]{val }\end{DoxyParamCaption})}
+
+
+
+Set auto focus mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em val} & mode of autofocus\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Only {\ttfamily 5MP} cameras support auto focus control 
+\end{DoxyNote}
+\mbox{\Hypertarget{Arducam_8h_a294c22d8841eea04dcd9a906cab9e6d4}\label{Arducam_8h_a294c22d8841eea04dcd9a906cab9e6d4}} 
+\index{Arducam.h@{Arducam.h}!setAutoISOSensitive@{setAutoISOSensitive}}
+\index{setAutoISOSensitive@{setAutoISOSensitive}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{setAutoISOSensitive()}{setAutoISOSensitive()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} set\+Auto\+I\+S\+O\+Sensitive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{uint8\+\_\+t}]{val }\end{DoxyParamCaption})}
+
+
+
+Set the gain mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em val} & {\ttfamily 1} turn on automatic gain {\ttfamily 0} turn off automatic gain\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Arducam_8h_ab11ad5a5fec036451e88f4f23dbc1f16}\label{Arducam_8h_ab11ad5a5fec036451e88f4f23dbc1f16}} 
+\index{Arducam.h@{Arducam.h}!setAutoWhiteBalance@{setAutoWhiteBalance}}
+\index{setAutoWhiteBalance@{setAutoWhiteBalance}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{setAutoWhiteBalance()}{setAutoWhiteBalance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} set\+Auto\+White\+Balance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{uint8\+\_\+t}]{val }\end{DoxyParamCaption})}
+
+
+
+Set white balance mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em val} & {\ttfamily 1} turn on automatic white balance {\ttfamily 0} turn off automatic white balance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Arducam_8h_a8eb9dac524b4d55be9b908d9dd441d48}\label{Arducam_8h_a8eb9dac524b4d55be9b908d9dd441d48}} 
+\index{Arducam.h@{Arducam.h}!setAutoWhiteBalanceMode@{setAutoWhiteBalanceMode}}
+\index{setAutoWhiteBalanceMode@{setAutoWhiteBalanceMode}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{setAutoWhiteBalanceMode()}{setAutoWhiteBalanceMode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} set\+Auto\+White\+Balance\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{Arducam_8h_a643d0ad26131376e247aab82485e0095}{C\+A\+M\+\_\+\+W\+H\+I\+T\+E\+\_\+\+B\+A\+L\+A\+N\+CE}}}]{mode }\end{DoxyParamCaption})}
+
+
+
+Set the white balance mode Manually. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em mode} & White balance mode\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Arducam_8h_abb620c825fbbc7588830f6b1d21a3728}\label{Arducam_8h_abb620c825fbbc7588830f6b1d21a3728}} 
+\index{Arducam.h@{Arducam.h}!setBrightness@{setBrightness}}
+\index{setBrightness@{setBrightness}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{setBrightness()}{setBrightness()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} set\+Brightness (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{Arducam_8h_adf950e5ae505c62fabb157a5385c2c71}{C\+A\+M\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+S\+S\+\_\+\+L\+E\+V\+EL}}}]{level }\end{DoxyParamCaption})}
+
+
+
+Set Brightness level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em level} & Brightness level\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Arducam_8h_a3881f35aaa967bd603fb37b77dabd2b2}\label{Arducam_8h_a3881f35aaa967bd603fb37b77dabd2b2}} 
+\index{Arducam.h@{Arducam.h}!setColorEffect@{setColorEffect}}
+\index{setColorEffect@{setColorEffect}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{setColorEffect()}{setColorEffect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} set\+Color\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{Arducam_8h_a1396f1daef6526339ee8abe10a55c375}{C\+A\+M\+\_\+\+C\+O\+L\+O\+R\+\_\+\+FX}}}]{effect }\end{DoxyParamCaption})}
+
+
+
+Set special effects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em effect} & Special effects mode\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Arducam_8h_a9ef34f613cc36d6ae790b205afc2c9da}\label{Arducam_8h_a9ef34f613cc36d6ae790b205afc2c9da}} 
+\index{Arducam.h@{Arducam.h}!setContrast@{setContrast}}
+\index{setContrast@{setContrast}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{setContrast()}{setContrast()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} set\+Contrast (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{Arducam_8h_a039dba5eae31265427b4829d0db59231}{C\+A\+M\+\_\+\+C\+O\+N\+T\+R\+A\+S\+T\+\_\+\+L\+E\+V\+EL}}}]{level }\end{DoxyParamCaption})}
+
+
+
+Set Contrast level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em level} & Contrast level\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Arducam_8h_a6c3e8ccf6bc773a48527ae7836d8ec74}\label{Arducam_8h_a6c3e8ccf6bc773a48527ae7836d8ec74}} 
+\index{Arducam.h@{Arducam.h}!setEV@{setEV}}
+\index{setEV@{setEV}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{setEV()}{setEV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} set\+EV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{Arducam_8h_ab97c4e8f129e7b064def02a3e9e19aff}{C\+A\+M\+\_\+\+E\+V\+\_\+\+L\+E\+V\+EL}}}]{level }\end{DoxyParamCaption})}
+
+
+
+Set EV level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em level} & EV level\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Arducam_8h_af6772ec6ede2f677d010110c5a816a83}\label{Arducam_8h_af6772ec6ede2f677d010110c5a816a83}} 
+\index{Arducam.h@{Arducam.h}!setISOSensitivity@{setISOSensitivity}}
+\index{setISOSensitivity@{setISOSensitivity}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{setISOSensitivity()}{setISOSensitivity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} set\+I\+S\+O\+Sensitivity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{int}]{iso\+\_\+sense }\end{DoxyParamCaption})}
+
+
+
+Set the exposure time Manually. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em iso\+\_\+sense} & Value of gain\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Before calling this function, you need to use the \mbox{\hyperlink{Arducam_8h_a294c22d8841eea04dcd9a906cab9e6d4}{set\+Auto\+I\+S\+O\+Sensitive()}} function to turn off the auto gain function 
+\end{DoxyNote}
+\mbox{\Hypertarget{Arducam_8h_a8124847ddb24c988de3b6fe8b7441fb3}\label{Arducam_8h_a8124847ddb24c988de3b6fe8b7441fb3}} 
+\index{Arducam.h@{Arducam.h}!setSaturation@{setSaturation}}
+\index{setSaturation@{setSaturation}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{setSaturation()}{setSaturation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} set\+Saturation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{Arducam_8h_af8d3f3a4b053155fc03d27c1dd23c011}{C\+A\+M\+\_\+\+S\+T\+A\+U\+R\+A\+T\+I\+O\+N\+\_\+\+L\+E\+V\+EL}}}]{level }\end{DoxyParamCaption})}
+
+
+
+Set saturation level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em level} & Saturation level\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Arducam_8h_a77e47dca0e36596a322c8d2e429f3c3e}\label{Arducam_8h_a77e47dca0e36596a322c8d2e429f3c3e}} 
+\index{Arducam.h@{Arducam.h}!setSharpness@{setSharpness}}
+\index{setSharpness@{setSharpness}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{setSharpness()}{setSharpness()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} set\+Sharpness (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{Arducam_8h_afe52c72b2eda519bcd2b9db8df0d13f7}{C\+A\+M\+\_\+\+S\+H\+A\+R\+P\+N\+E\+S\+S\+\_\+\+L\+E\+V\+EL}}}]{level }\end{DoxyParamCaption})}
+
+
+
+Set Sharpness level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em level} & Sharpness level\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Only {\ttfamily 3MP} cameras support sharpness control 
+\end{DoxyNote}
+\mbox{\Hypertarget{Arducam_8h_aee5a9ed5de4b2eafa1e2a3ccc10057a6}\label{Arducam_8h_aee5a9ed5de4b2eafa1e2a3ccc10057a6}} 
+\index{Arducam.h@{Arducam.h}!startPreview@{startPreview}}
+\index{startPreview@{startPreview}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{startPreview()}{startPreview()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} start\+Preview (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{Arducam_8h_a79f9eea25f8ca9df7e0773ab408baed7}{C\+A\+M\+\_\+\+V\+I\+D\+E\+O\+\_\+\+M\+O\+DE}}}]{mode }\end{DoxyParamCaption})}
+
+
+
+Start preview with specified resolution mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em mode} & Resolution of the camera module\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Before calling this function, you need to register the callback function.\+The default image pixel format is J\+P\+EG 
+\end{DoxyNote}
+\mbox{\Hypertarget{Arducam_8h_ab4c6ef63c66d7cf3ea0414628a91f4ba}\label{Arducam_8h_ab4c6ef63c66d7cf3ea0414628a91f4ba}} 
+\index{Arducam.h@{Arducam.h}!stopPreview@{stopPreview}}
+\index{stopPreview@{stopPreview}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{stopPreview()}{stopPreview()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} stop\+Preview (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera }\end{DoxyParamCaption})}
+
+
+
+Stop preview. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Arducam_8h_ac6035b7faf84afc745ad232df945f33a}\label{Arducam_8h_ac6035b7faf84afc745ad232df945f33a}} 
+\index{Arducam.h@{Arducam.h}!takeMultiPictures@{takeMultiPictures}}
+\index{takeMultiPictures@{takeMultiPictures}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{takeMultiPictures()}{takeMultiPictures()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} take\+Multi\+Pictures (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+DE}}}]{mode,  }\item[{\mbox{\hyperlink{Arducam_8h_ae9748ceecc6f11421cb46fc489606338}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+P\+I\+X\+\_\+\+F\+MT}}}]{pixel\+\_\+format,  }\item[{uint8\+\_\+t}]{number }\end{DoxyParamCaption})}
+
+
+
+Start multi capture with specified number of image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em mode} & Resolution of the camera module \\
+\hline
+{\em pixel\+\_\+format} & Output image pixel format,which supports J\+P\+EG, R\+GB, Y\+UV \\
+\hline
+{\em number} & Number of pictures taken\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The mode parameter must be the resolution which the current camera supported 
+\end{DoxyNote}
+\mbox{\Hypertarget{Arducam_8h_ada9dc5817837f7cc41fdeece2aef7ede}\label{Arducam_8h_ada9dc5817837f7cc41fdeece2aef7ede}} 
+\index{Arducam.h@{Arducam.h}!takePicture@{takePicture}}
+\index{takePicture@{takePicture}!Arducam.h@{Arducam.h}}
+\doxysubsubsection{\texorpdfstring{takePicture()}{takePicture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Arducam_8h_a859449669e9de69e33ddd851c3eac6c1}{Cam\+Status}} take\+Picture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{Arducam_8h_aad9c52a28f327c5d815f76befe687015}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+M\+O\+DE}}}]{mode,  }\item[{\mbox{\hyperlink{Arducam_8h_ae9748ceecc6f11421cb46fc489606338}{C\+A\+M\+\_\+\+I\+M\+A\+G\+E\+\_\+\+P\+I\+X\+\_\+\+F\+MT}}}]{pixel\+\_\+format }\end{DoxyParamCaption})}
+
+
+
+Start a snapshot with specified resolution and pixel format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \mbox{\hyperlink{structArducamCamera}{Arducam\+Camera}} instance \\
+\hline
+{\em mode} & Resolution of the camera module \\
+\hline
+{\em pixel\+\_\+format} & Output image pixel format,which supports J\+P\+EG, R\+GB, Y\+UV\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return operation status
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The mode parameter must be the resolution wh 
+\end{DoxyNote}
